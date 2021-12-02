@@ -15,6 +15,6 @@ This project was made as a part of the Codecademy frontend engineer course.
 https://www.codecademy.com/learn/paths/front-end-engineer-career-path
 
 It is *intended* to be made without frameworks utilizing only vanilla coding.
-This README is also part of learning and following web development best practice.
+This README is also part of learning and following web development best practices in relation to Git and GitHub.
 
 Thank you for reading.
