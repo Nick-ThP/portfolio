@@ -1,7 +1,10 @@
 # General info
+
+Hello!
+
 This project is my personal portfolio.
 
-Hello! If you are reading this you are probably interested in my capabilities as a frontend web developer.
+If you are reading this you are probably interested in my capabilities as a frontend web developer.
 	
 ## Technologies
 Project is created with vanilla:
