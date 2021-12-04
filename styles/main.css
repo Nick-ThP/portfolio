@@ -15,57 +15,29 @@
 
 
 @font-face {
-    font-family: 'Libre Baskerville';
-    src: url(../fonts/LibreBaskerville-Regular.ttf) format('truetype'),
-    url(../fonts/LibreBaskerville-Regular.woff) format('woff'),
-    url(../fonts/LibreBaskerville-Regular.woff2) format('woff2');
+    font-family: 'Oswald';
+    src: url(../fonts/Oswald-Regular.ttf) format('truetype'),
+    url(../fonts/Oswald-Regular.woff) format('woff'),
+    url(../fonts/Oswald-Regular.woff2) format('woff2');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Libre Baskerville';
-    src: url(../fonts/LibreBaskerville-Bold.ttf) format('truetype'),
-    url(../fonts/LibreBaskerville-Bold.woff) format('woff'),
-    url(../fonts/LibreBaskerville-Bold.woff2) format('woff2');
+    font-family: 'Oswald';
+    src: url(../fonts/Oswald-Bold.ttf) format('truetype'),
+    url(../fonts/Oswald-Bold.woff) format('woff'),
+    url(../fonts/Oswald-Bold.woff2) format('woff2');
     font-weight: bold;
-    font-style: normal;
+
 }
 
 @font-face {
-    font-family: 'Libre Baskerville';
-    src: url(../fonts/LibreBaskerville-Italic.ttf) format('truetype'),
-    url(../fonts/LibreBaskerville-Italic.woff) format('woff'),
-    url(../fonts/LibreBaskerville-Italic.woff2) format('woff2');
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Nunito';
-    src: url(../fonts/Nunito-Regular.ttf) format('truetype'),
-    url(../fonts/Nunito-Regular.woff) format('woff'),
-    url(../fonts/Nunito-Regular.woff2) format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Nunito';
-    src: url(../fonts/Nunito-Bold.ttf) format('truetype'),
-    url(../fonts/Nunito-Bold.woff) format('woff'),
-    url(../fonts/Nunito-Bold.woff2) format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Nunito';
-    src: url(../fonts/Nunito-Italic.ttf) format('truetype'),
-    url(../fonts/Nunito-Italic.woff) format('woff'),
-    url(../fonts/Nunito-Italic.woff2) format('woff2');
-    font-weight: 400;
-    font-style: italic;
+    font-family: 'Oswald';
+    src: url(../fonts/Oswald-Light.ttf) format('truetype'),
+    url(../fonts/Oswald-Light.woff) format('woff'),
+    url(../fonts/Oswald-Light.woff2) format('woff2');
+    font-weight: lighter;
 }
 
 
@@ -81,11 +53,7 @@ body {
 }
  
 h1, h2, h3, h4, h5, h6, li {
-    font-family: 'Libre Baskerville';
-}
-
-p {
-    font-family: 'Nunito';
+    font-family: 'Oswald';
 }
 
 
@@ -94,41 +62,50 @@ p {
 
 
 
-.section-1 {
+header {
     width: 100%;
     min-height: 100vh;
+    padding-left: 20px;
     display: flex;
     background: url(../images/texture.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.article-1 {
+.heading {
+    position: fixed;
     margin: auto 0;
-    max-width: 70%;
+    max-width: 60%;
     text-align: left;
     color: white;
-    font-weight: bold;
-    text-shadow: 2px 2px darkorange;
+    line-height: 10rem;
+    letter-spacing: 0.3rem;
+    text-shadow: 7px 7px 7px black;
 }
 
-.article-1 h1 {
-    font-size: 8rem;
-    color: white;
-    
+.heading h1 {
+    font-size: 10rem;
+    font-weight: bold
 }
 
-.article-1 p {
-    font-size: 4rem;
-    
-}
-    
+.heading h2 {
+    font-size: 5rem;
+    font-weight: lighter;
+}   
 
 #nicklas {
     position: fixed;
     bottom: 0;
     right: 20px;
+    height: 500px;
+    width: auto;
 }
 
 
+
+.section-2 {
+    height: 4000px;
+}
 
 
 
