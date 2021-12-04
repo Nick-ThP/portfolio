@@ -1,7 +1,10 @@
 # General info
+
+Hello!
+
 This project is my personal portfolio.
 
-Hello! If you are reading this you are probably interested in my capabilities as a frontend web developer.
+If you are reading this you are probably interested in my capabilities as a frontend web developer.
 	
 ## Technologies
 Project is created with vanilla:
@@ -10,7 +13,7 @@ Project is created with vanilla:
 * JS
 
 ## Note
-This project was made as a part of the Codecademy frontend engineer course.
+This project was made as a part of the Codecademy frontend engineering course.
 
 https://www.codecademy.com/learn/paths/front-end-engineer-career-path
 
