@@ -2,14 +2,14 @@
 
 const header = document.getElementById('header');
 
-function fadeOutOnScroll(element) {
+const fadeOutOnScroll = element => {
 	if (!element) {
 		return;
 	}
 	
-	const distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
-	const elementHeight = element.offsetHeight;
-	const scrollTop = document.documentElement.scrollTop;
+	let distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+	let elementHeight = element.offsetHeight;
+	let scrollTop = document.documentElement.scrollTop;
 	
 	let opacity = 1;
 	
@@ -22,7 +22,7 @@ function fadeOutOnScroll(element) {
 	}
 }
 
-function scrollHandler() {
+const scrollHandler = () => {
 	fadeOutOnScroll(header);
 }
 
