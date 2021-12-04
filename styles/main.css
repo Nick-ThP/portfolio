@@ -94,58 +94,6 @@ p {
 
 
 
-.navbar {
-    width: 100%;
-    background: black;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    top: 0px;
-    z-index: 1;
-    opacity: 0.85;
-    transform-origin: top;
-    transition: transform 1.5s ease-out, opacity 2s ease-in;
-}
-
-.navbar:hover {
-    transform: scale(2);
-}
-
-.navbar li {
-    display: inline;
-}
-
-.navbar li+li::before {
-    color: white;
-    content: "//";
-    padding: 0px 50px;
-}
-
-.navbar li a {
-    color: white;
-    text-decoration: none;
-}
-
-.navbar li a:hover {
-    color: darkorange;
-    text-decoration: underline;
-}
-
-.navbar li a:active {
-    color: aquamarine;
-    text-decoration: underline;
-}
-
-@media only screen and (max-width: 480px) {
-
-}
-
-
-
-/* Section 1 */
-
-
-
 .section-1 {
     width: 100%;
     min-height: 100vh;
