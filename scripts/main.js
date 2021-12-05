@@ -20,6 +20,7 @@ const fadeOutOnScroll = element => {
 	if (opacity >= 0) {
 		element.style.opacity = opacity;
 	}
+
 }
 
 const scrollHandler = () => {

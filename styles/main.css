@@ -44,8 +44,10 @@
 
 /* General */
 
+
+
 html {
-    background: linear-gradient(to bottom, #e7d1c7 0%,#596a72 100%);
+    background: linear-gradient(to bottom, #e4a384 0%,#596a72 100%);
     background-attachment: fixed;
     background-repeat: repeat;
 }
@@ -71,28 +73,50 @@ header {
     width: 100%;
     min-height: 100vh;
     padding-left: 20px;
-    display: flex;
+    margin-bottom: 1000px;
 }
 
 .heading {
     position: fixed;
-    margin: auto 0;
     max-width: 60%;
     text-align: left;
     color: white;
-    line-height: 10rem;
-    letter-spacing: 0.3rem;
-    text-shadow: 7px 7px 7px black;
+    line-height: 11rem;
+    text-shadow: 
+    5px 5px        black, 
+    4.75px 4.75px  black, 
+    4.5px 4.5px    black, 
+    4.25px 4.25px  black,
+    4px 4px        black,
+    3.75px 3.75px  black,
+    3.5px 3.5px    black,
+    3.25px 3.25px  black,
+    3px 3px        black,
+    2.75px 2.75px  black,
+    2.5px 2.5px    black,
+    2.25px 2.25px  black,
+    2px 2px        black,
+    1.75px 1.75px  black,
+    1.5px 1.5px    black,
+    1.25px 1.25px  black,
+    1px 1px        black,
+    0.75px 0.75px  black,
+    0.5px 0.5px    black,
+    0.25px 0.25px  black;
 }
 
 .heading h1 {
     font-size: 10rem;
-    font-weight: bold
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 11rem;
+    letter-spacing: 0.1rem;
 }
 
 .heading h2 {
     font-size: 5rem;
     font-weight: lighter;
+    letter-spacing: 0.25rem;
 }   
 
 #nicklas {
@@ -105,45 +129,102 @@ header {
 
 
 
-.section-2 {
-    height: 4000px;
-}
+/* Main section */
 
 
 
-
-
-
-
-
-
-grid {
-    max-width: 1200px;
+#wrapper {
     width: 100%;
-    height: auto;
-    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+}
+
+#main-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    justify-content: space-around;
-    align-content: center;
+    min-width: 80%;
+    height: 80%;
+    margin: auto;
+    background-color: grey;
+    grid-template: 15% 70% 15% / 1fr;
 }
 
-grid {
-    grid-column: 1 / span 3;
-    grid-row: 4 / 4;
-    background: black;
-    color: white;
+
+
+/* Navigation */
+
+
+
+nav {
+    grid: 1fr / 1fr;
+    display: grid;
+    grid-template: 1fr / repeat(5, 1fr);
+}
+
+.toggle {
+    grid: 1fr / 1fr;
     text-align: center;
-    opacity: 0.8;
-    padding: 20px;
-    margin: 20px;
-    display: inline-flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: block;
     align-content: center;
+    background: darkgrey;
+    color: white;
+    padding: 20px;
+    transition-duration: 0.4s;
+}
+
+.toggle:hover {
+    background-color: grey;
+    color: black;
+}
+
+.toggle:active {
+    background-color: grey;
+    color: black;
 }
 
 
 
+/* Information */
+
+
+
+.information {
+    grid: 1fr / 1fr;
+}
+
+
+
+/* Footer */
+
+
+
+footer {
+    grid: 1fr / 1fr;
+    display: grid;
+    grid-template: 1fr / 70% auto;
+    grid-template-areas: "a b";
+    width: 100%;
+    background-color: gray;
+    border-top: 3px solid black;
+    padding: 20px;
+}
+
+#left-footer {
+    grid: 1fr / 1fr;
+    justify-content: start;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+#right-footer {
+    grid-area: b;
+    justify-content: end;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
