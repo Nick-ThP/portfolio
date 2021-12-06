@@ -187,10 +187,10 @@ header {
 nav {
     grid: 1fr / 1fr;
     display: grid;
-    grid-template: 1fr / repeat(5, 1fr);
+    grid-template: 1fr / repeat(4, 1fr);
 }
 
-.toggle {
+.nav-btn {
     grid: 1fr / 1fr;
     text-align: center;
     display: block;
@@ -201,12 +201,12 @@ nav {
     transition-duration: 0.4s;
 }
 
-.toggle:hover {
+.nav-btn:hover {
     background-color: grey;
     color: black;
 }
 
-.toggle:active {
+.nav-btn:active {
     background-color: grey;
     color: black;
 }
@@ -217,8 +217,21 @@ nav {
 
 
 
-.information {
-    grid: 1fr / 1fr;
+#toggleArticle1 {
+    display: block;
+}
+
+#toggleArticle2 {
+    display: none;
+}
+
+#toggleArticle3 {
+    
+    display: none;
+}
+
+#toggleArticle4 {
+    display: none;
 }
 
 
