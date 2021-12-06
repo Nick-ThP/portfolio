@@ -1,7 +1,5 @@
 /* Fade script */
 
-
-
 const header = document.getElementById('header');
 
 const fadeOutOnScroll = element => {
@@ -25,6 +23,8 @@ const fadeOutOnScroll = element => {
 
 }
 
+/* Execution*/
+
 const scrollHandler = () => {
 	fadeOutOnScroll(header);
 }
@@ -34,8 +34,6 @@ window.addEventListener('scroll', scrollHandler);
 
 
 /* Toggle script */
-
-
 
 const sectionArray = ["section1", "section2", "section3", "section4"];
 const buttonArray = ["button1", "button2", "button3", "button4"]
@@ -74,4 +72,12 @@ const hide = () => {
 			button.style.backgroundColor = "darkgrey"
         }
     }
-} 
+}
+
+/* Execution */
+
+const toggleHandler = () => {
+	show('section1', 'button1');
+}
+
+window.addEventListener("DOMContentLoaded", toggleHandler);

@@ -215,7 +215,9 @@ nav {
 
 /* Information */
 
-
+#section1 {
+    display: block;
+}
 
 #section2 {
     display: none;
