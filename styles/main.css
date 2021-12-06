@@ -190,7 +190,7 @@ nav {
     grid-template: 1fr / repeat(4, 1fr);
 }
 
-.menu-btn {
+.menu-button {
     grid: 1fr / 1fr;
     text-align: center;
     display: block;
@@ -201,12 +201,12 @@ nav {
     transition-duration: 0.4s;
 }
 
-.menu-btn:hover {
+.menu-button:hover {
     background-color: grey;
     color: black;
 }
 
-.menu-btn:active {
+.menu-button:active {
     background-color: grey;
     color: black;
 }

@@ -38,32 +38,40 @@ window.addEventListener('scroll', scrollHandler);
 
 
 const sectionArray = ["section1", "section2", "section3", "section4"];
+const buttonArray = ["button1", "button2", "button3", "button4"]
 
-let visibleId = null;
+let visibleA = null;
+let visibleB = null;
 
-const show = (id) => {
+const show = (a, b) => {
 
-    if(visibleId !== id) {
-    	visibleId = id;
+    if(visibleA !== a) {
+    	visibleA = a;
     } 
-
     hide();
+
+	if(visibleB !== b) {
+    	visibleB = b;
+    } 
+	hide();
 
 }
 
 const hide = () => {
 
-    let div, i, id;
+    for(let i = 0; i < sectionArray.length; i++) {
 
-    for(i = 0; i < sectionArray.length; i++) {
+        let a = sectionArray[i];
+		let b = buttonArray[i];
+        let section = document.getElementById(a);
+		let button = document.getElementById(b)
 
-        id = sectionArray[i];
-        div = document.getElementById(id);
-
-        if(visibleId === id) {
-        	div.style.display = "block";
+        if (visibleA === a || visibleB === b) {
+        	section.style.display = "block";
+			button.style.backgroundColor = "grey"
         } else {
-            div.style.display = "none";
+            section.style.display = "none";
+			button.style.backgroundColor = "darkgrey"
         }
     }
-}  
+} 
