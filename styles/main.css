@@ -190,7 +190,7 @@ nav {
     grid-template: 1fr / repeat(4, 1fr);
 }
 
-.nav-btn {
+.menu-btn {
     grid: 1fr / 1fr;
     text-align: center;
     display: block;
@@ -201,12 +201,12 @@ nav {
     transition-duration: 0.4s;
 }
 
-.nav-btn:hover {
+.menu-btn:hover {
     background-color: grey;
     color: black;
 }
 
-.nav-btn:active {
+.menu-btn:active {
     background-color: grey;
     color: black;
 }
@@ -217,20 +217,15 @@ nav {
 
 
 
-#toggleArticle1 {
-    display: block;
-}
-
-#toggleArticle2 {
+#section2 {
     display: none;
 }
 
-#toggleArticle3 {
-    
+#section3 {
     display: none;
 }
 
-#toggleArticle4 {
+#section4 {
     display: none;
 }
 

@@ -25,7 +25,7 @@
 <!-- Main content  -->
 
 
-    <section id="wrapper"> 
+    <div id="wrapper"> 
         <div id="main-content">
 
 
@@ -33,22 +33,22 @@
 
 
             <nav>
-                <div class="nav-btn" id="toggleButton1" onclick="toggle('toggleButton1', 'toggleArticle1')"><p>Label</p></div>
-                <div class="nav-btn" id="toggleButton2" onclick="toggle('toggleButton2', 'toggleArticle2')"><p>Label</p></div>
-                <div class="nav-btn" id="toggleButton3" onclick="toggle('toggleButton3', 'toggleArticle3')"><p>Label</p></div>
-                <div class="nav-btn" id="toggleButton4" onclick="toggle('toggleButton4', 'toggleArticle4')"><p>Label</p></div>
+                <a class="menu-btn" onclick="show('section1');">Menu 1</a>
+                <a class="menu-btn" onclick="show('section2');">Menu 2</a>
+                <a class="menu-btn" onclick="show('section3');">Menu 3</a>
+                <a class="menu-btn" onclick="show('section4');">Menu 4</a>
             </nav>
 
 
             <!-- Portfolio information -->
 
 
-            <section id="toggle-content">
-                <article id="toggleArticle1"><h3>Test 1</h3></article>
-                <article id="toggleArticle2"><h3>Test 2</h3></article>
-                <article id="toggleArticle3"><h3>Test 3</h3></article>
-                <article id="toggleArticle4"><h3>Test 3</h3></article>
-            </section>
+            <div id="toggled-content">
+                <section id="section1"><h3>Test 1</h3></section>
+                <section id="section2"><h3>Test 2</h3></section>
+                <section id="section3"><h3>Test 3</h3></section>
+                <section id="section4"><h3>Test 3</h3></section>
+            </div>
 
 
             <!-- Footer content-->
@@ -76,7 +76,7 @@
 
 
         </div>
-    </section>
+    </div>
 
     <script src="scripts/main.js"></script>
 

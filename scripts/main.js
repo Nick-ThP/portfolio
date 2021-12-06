@@ -1,6 +1,7 @@
 /* Fade script */
 
 
+
 const header = document.getElementById('header');
 
 const fadeOutOnScroll = element => {
@@ -17,7 +18,7 @@ const fadeOutOnScroll = element => {
 	if (scrollTop > distanceToTop) {
 		opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
 	}
-	
+
 	if (opacity >= 0) {
 		element.style.opacity = opacity;
 	}
@@ -31,34 +32,38 @@ const scrollHandler = () => {
 window.addEventListener('scroll', scrollHandler);
 
 
+
 /* Toggle script */
 
 
-const toggle = (button, article) => {
 
-	let array = [1, 2, 3, 4];
+const sectionArray = ["section1", "section2", "section3", "section4"];
 
-	let x = document.getElementById(button);
-	let y = document.getElementById(article);
+let visibleId = null;
 
-	for (i = 0; array.length > 0; i++) {
+const show = (id) => {
 
-		if (x.filter(a => typeof a === "number") === array[i]) {
-			x.style.backgroundColor = "gray";
-			y.style.display = "block";
-		} 
-		
-		else {
-			x.style.backgroundColor = "darkgray";
-			y.style.display = "none";
-		}
+    if(visibleId !== id) {
+    	visibleId = id;
+    } 
 
-	}
+    hide();
 
 }
 
-const toggleHandler = () => {
-	toggle(button, article);
-}
+const hide = () => {
 
-document.getElementsByClassName('nav-btn').addEventListener('click', toggleHandler);
+    let div, i, id;
+
+    for(i = 0; i < sectionArray.length; i++) {
+
+        id = sectionArray[i];
+        div = document.getElementById(id);
+
+        if(visibleId === id) {
+        	div.style.display = "block";
+        } else {
+            div.style.display = "none";
+        }
+    }
+}  
