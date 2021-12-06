@@ -71,7 +71,9 @@ const hide = () => {
             section.style.display = "none";
 			button.style.backgroundColor = "darkgrey"
         }
+
     }
+	
 }
 
 /* Execution */
