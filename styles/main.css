@@ -145,11 +145,11 @@ header {
 
 #main-content {
     display: grid;
-    min-width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     margin: auto;
-    background-color: grey;
-    grid-template: 15% 70% 15% / 1fr;
+    background-color: #161616;
+    grid-template: 12.5% 75% 12.5% / 1fr;
     z-index: 1;
     box-shadow:
     6px 6px 10px   black, 
@@ -193,42 +193,53 @@ nav {
 .menu-button {
     grid: 1fr / 1fr;
     text-align: center;
-    display: block;
+    display: inline-block;
+    font-family: 'Oswald', serif;
+    cursor: pointer;
+    font-weight: bold;
     align-content: center;
-    background: darkgrey;
-    color: white;
+    font-size: 2rem;
+    color: #F5F5F5;
     padding: 20px;
-    transition-duration: 0.4s;
+    transition-duration: 0.5s;
+}
+
+.menu-button a {
+    margin: auto;
 }
 
 .menu-button:hover {
     background-color: grey;
-    color: black;
+    color: darkorange;
 }
 
 .menu-button:active {
     background-color: grey;
-    color: black;
+    color: darkorange;
 }
 
 
 
 /* Information */
 
-#section1 {
-    display: block;
+#section1, #section2, #section3, #section4 {
+    display: none;
+    padding: 70px;
+    color: #F5F5F5;   
 }
 
-#section2 {
-    display: none;
+#article1 {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    gap: 50px;
 }
 
-#section3 {
-    display: none;
+#article1-column {
+    grid: 1fr / 1fr;
 }
 
-#section4 {
-    display: none;
+#article1-column p {
+    font-family: 'oswald';
 }
 
 
@@ -243,14 +254,16 @@ footer {
     grid-template: 1fr / 70% auto;
     grid-template-areas: "a b";
     width: 100%;
-    background-color: gray;
-    border-top: 3px solid black;
+    background-color: #2a2a2a;
+    color: #F5F5F5;
+    border-top: 1px solid black;
     padding: 20px;
 }
 
 #left-footer {
     grid: 1fr / 1fr;
     justify-content: start;
+    align-self: center;
     display: flex;
     flex-wrap: wrap;
     column-gap: 20px;
@@ -259,12 +272,13 @@ footer {
 #right-footer {
     grid-area: b;
     justify-content: end;
+    align-content: center;
     display: flex;
     flex-wrap: wrap;
     column-gap: 20px;
 }
 
 .logo {
-    width: 50px;
+    width: 40px;
     height: auto;
 }

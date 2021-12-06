@@ -66,10 +66,11 @@ const hide = () => {
 
         if (visibleA === a || visibleB === b) {
         	section.style.display = "block";
-			button.style.backgroundColor = "grey"
+			button.style.backgroundColor = "#161616"
+
         } else {
             section.style.display = "none";
-			button.style.backgroundColor = "darkgrey"
+			button.style.backgroundColor = "#2a2a2a"
         }
 
     }
