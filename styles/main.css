@@ -163,6 +163,12 @@ header {
     0.75px 0.75px  black,
     0.5px 0.5px    black,
     0.25px 0.25px  black;
+} 
+
+#section1, #section2, #section3, #section4 {
+    display: none;
+    padding: 50px;
+    color: #F5F5F5;  
 }
 
 /* Navigation */
@@ -201,31 +207,54 @@ nav {
     color: darkorange;
 }
 
-/* Information */
-
-#section1, #section2, #section3, #section4 {
-    display: none;
-    padding: 70px;
-    color: #F5F5F5;   
-}
+/* Introduction */
 
 #article1 {
-    /*display: grid;*/
-    /*grid-template: 1fr / repeat(3, 1fr);*/
-    column-count: 4;
-    column-gap: 35px;
+    column-count: 3;
+    column-gap: 50px;
     column-rule-style: none;
     text-align: justify;
 }
 
 #article1-column {
-    /*grid: 1fr / 1fr;*/
     column-span: all;
 }
 
 #article1-column p {
     font-family: 'oswald';
 }
+
+#intro-picture {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Background */
+
+/* Projects */
+
+#article2 {
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: scroll;
+}
+
+.project {
+    background-color: orange;
+    opacity: 0.1;
+    width: 20px;
+    flex-basis: 20%;
+    display: inline-block;
+}
+
+.project img {
+    width: 100px;
+    height: auto;
+}
+
+/* Animations */
 
 /* Footer */
 
