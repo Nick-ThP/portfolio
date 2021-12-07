@@ -1,18 +1,12 @@
 /* Reset */
 
-
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-
-
 /* Fonts */
-
-
 
 @font-face {
     font-family: 'Oswald';
@@ -40,14 +34,10 @@
     font-weight: lighter;
 }
 
-
-
 /* General */
 
-
-
 html {
-    background: linear-gradient(to bottom, #e4a384 0%,#596a72 100%);
+    background: linear-gradient(to bottom, darkorange 0%,#707070 100%);
     background-attachment: fixed;
     background-repeat: repeat;
 }
@@ -63,11 +53,11 @@ h1, h2, h3, h4, h5, h6, li {
     font-family: 'Oswald';
 }
 
-
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /* Header */
-
-
 
 header {
     width: 100%;
@@ -131,11 +121,7 @@ header {
     width: auto;
 }
 
-
-
 /* Main section */
-
-
 
 #wrapper {
     width: 100%;
@@ -144,6 +130,7 @@ header {
 }
 
 #main-content {
+    transition: fadeIn 5s;
     display: grid;
     width: 90%;
     height: 90%;
@@ -178,11 +165,7 @@ header {
     0.25px 0.25px  black;
 }
 
-
-
 /* Navigation */
-
-
 
 nav {
     grid: 1fr / 1fr;
@@ -218,8 +201,6 @@ nav {
     color: darkorange;
 }
 
-
-
 /* Information */
 
 #section1, #section2, #section3, #section4 {
@@ -229,29 +210,29 @@ nav {
 }
 
 #article1 {
-    display: grid;
-    grid-template: 1fr / repeat(3, 1fr);
-    gap: 50px;
+    /*display: grid;*/
+    /*grid-template: 1fr / repeat(3, 1fr);*/
+    column-count: 4;
+    column-gap: 35px;
+    column-rule-style: none;
+    text-align: justify;
 }
 
 #article1-column {
-    grid: 1fr / 1fr;
+    /*grid: 1fr / 1fr;*/
+    column-span: all;
 }
 
 #article1-column p {
     font-family: 'oswald';
 }
 
-
-
 /* Footer */
-
-
 
 footer {
     grid: 1fr / 1fr;
     display: grid;
-    grid-template: 1fr / 70% auto;
+    grid-template: 1fr / 60% auto;
     grid-template-areas: "a b";
     width: 100%;
     background-color: #2a2a2a;
@@ -278,9 +259,9 @@ footer {
     gap: 35px;
 }
 
-.fab {
+.fab, .fas, .far {
     font-size: 35px;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .img-logo {

@@ -7,12 +7,12 @@ const fadeOutOnScroll = element => {
 	if (!element) {
 		return;
 	}
-	
+
 	let distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
 	let elementHeight = element.offsetHeight;
 	let scrollTop = document.documentElement.scrollTop;
 	let opacity = 1;
-	
+
 	if (scrollTop > distanceToTop) {
 		opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
 	}
@@ -23,15 +23,13 @@ const fadeOutOnScroll = element => {
 
 }
 
-/* Execution*/
+/* Execution of fade script*/
 
 const scrollHandler = () => {
 	fadeOutOnScroll(header);
 }
 
 window.addEventListener('scroll', scrollHandler);
-
-
 
 /* Toggle script */
 
@@ -56,7 +54,6 @@ const show = (a, b) => {
 }
 
 const hide = () => {
-
     for(let i = 0; i < sectionArray.length; i++) {
 
         let a = sectionArray[i];
@@ -64,20 +61,18 @@ const hide = () => {
         let section = document.getElementById(a);
 		let button = document.getElementById(b)
 
-        if (visibleA === a || visibleB === b) {
+        if (visibleA === a && visibleB === b) {
         	section.style.display = "block";
 			button.style.backgroundColor = "#161616"
-
         } else {
             section.style.display = "none";
 			button.style.backgroundColor = "#2a2a2a"
         }
-
-    }
-	
+		
+    }	
 }
 
-/* Execution */
+/* Execution og toggle script */
 
 const toggleHandler = () => {
 	show('section1', 'button1');
