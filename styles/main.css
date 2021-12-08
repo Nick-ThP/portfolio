@@ -13,8 +13,7 @@
     src: url(../fonts/Oswald-Regular.ttf) format('truetype'),
     url(../fonts/Oswald-Regular.woff) format('woff'),
     url(../fonts/Oswald-Regular.woff2) format('woff2');
-    font-weight: 400;
-    font-style: normal;
+    font-weight: normal;
 }
 
 @font-face {
@@ -37,7 +36,7 @@
 /* General */
 
 html {
-    background: linear-gradient(to bottom, darkorange 0%,#707070 100%);
+    background: linear-gradient(to bottom, darkorange 0%, #707070 100%);
     background-attachment: fixed;
     background-repeat: repeat;
     scroll-behavior: smooth
