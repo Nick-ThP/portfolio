@@ -38,13 +38,11 @@
 html {
     background: linear-gradient(to bottom, darkorange 0%, #707070 100%);
     background-attachment: fixed;
-    background-repeat: repeat;
     scroll-behavior: smooth
 }
 
 body {
     background-image: url(../images/texture.png);
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 2000px;
 }
@@ -259,13 +257,9 @@ nav {
     font-weight: bold;
     align-content: center;
     font-size: 2rem;
-    color: #F5F5F5;
     padding: 20px;
     transition-duration: 0.5s;
-}
-
-.menu-button a {
-    margin: auto;
+    color: #F5F5F5;
 }
 
 .menu-button:hover {
@@ -305,7 +299,6 @@ nav {
     grid: 1fr / 1fr;
     width: 100%;
     height: auto;
-    margin: 0 auto;
     border: 1px solid black;
 }
 
@@ -329,23 +322,38 @@ nav {
 
 /* Projects */
 
-#article2 {
-    display: flex;    
-    flex-wrap: wrap;
+#article3 {
+    display: grid;    
+    grid-template: 1fr / repeat(5, 1fr);
     justify-content: space-evenly;
+    padding: 50px;
+    gap: 50px;
 }
 
 .project {
+    grid: 1fr / 1fr;
     background-color: orange;
-    opacity: 0.1;
-    width: 20px;
-    flex-basis: 20%;
+    opacity: 0.5;
     display: inline-block;
+    text-align: justify;
 }
 
 .project img {
-    width: 100px;
+    width: 100%;
     height: auto;
+}
+
+#overlay1, #overlay2, #overlay3, #overlay4 {
+    display: none;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.overlay-text {
+    grid: 1fr / 1fr;
+}
+
+.overlay-picture {
+    grid: 1fr / 1fr;
 }
 
 @media only screen and (max-device-width : 768px) {

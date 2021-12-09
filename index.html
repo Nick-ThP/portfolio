@@ -75,14 +75,44 @@
                     </article>
                 </section>
                 <section id="section2"><h3>Test 2</h3></section>
-                <section id="section3"><h3>Test 3</h3>
-                    <article id="article1">
-                            <div class="project">
-                                <h3>Norriq</h3>
-                                <p>Dette projekt er bla bla bla</p>
-                                <img class="project-picture" src="/images/forside-briller.png">
-                            </div>
+                <section id="section3">
+                    <article id="article3">
+                        <div class="project" onclick="on('overlay1', 'article3');">
+                            <h3>Norriq</h3>
+                            <p>
+                            Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
+                            the specific types of job listings i wanted to accommodate. 
+                            </p>
+                            <img class="project-picture" src="/images/forside-briller.png">
+                        </div>
+                        <div class="project" onclick="on('overlay2', 'article3');">
+                            <h3>Norriq</h3>
+                            <p>
+                            Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
+                            the specific types of job listings i wanted to accommodate. 
+                            </p>
+                            <img class="project-picture" src="/images/forside-briller.png">
+                        </div>
                     </article>
+                    <div id="overlay1" class="overlay">
+                        <div class="overlay-text">
+                            <h3>test test teset 1</h3>
+                            <button onclick="off('overlay1', 'article3');"></button>
+                            <p>
+                            Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
+                            the specific types of job listings i wanted to accommodate. 
+                        </div>
+                        <div class="overlay-picture">
+                            <img class="project-picture" src="/images/forside-briller.png">
+                        </div>
+                    </div>
+                    <div id="overlay2" class="overlay">
+                        <h3>test test test 2</h3>
+                        <button onclick="off('overlay2', 'article3');"></button>
+                        <p>
+                        Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
+                        the specific types of job listings i wanted to accommodate. 
+                    </div>
                 </section>
                 <section id="section4"><h3>Test 4</h3></section>
             </div>

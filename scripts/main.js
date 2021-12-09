@@ -20,7 +20,6 @@ const fadeOutOnScroll = element => {
 	if (opacity >= 0) {
 		element.style.opacity = opacity;
 	}
-
 }
 
 /* Execution of fade script*/
@@ -50,7 +49,6 @@ const show = (a, b) => {
     	visibleB = b;
     } 
 	hide();
-
 }
 
 const hide = () => {
@@ -63,19 +61,41 @@ const hide = () => {
 
         if (visibleA === a && visibleB === b) {
         	section.style.display = "block";
-			button.style.backgroundColor = "#161616"
+			button.style.backgroundColor = "#161616";
         } else {
             section.style.display = "none";
-			button.style.backgroundColor = "#2a2a2a"
+			button.style.backgroundColor = "#2a2a2a";
         }
-		
     }	
 }
 
-/* Execution og toggle script */
+/* Execution of toggle script */
 
 const toggleHandler = () => {
 	show('section1', 'button1');
 }
 
 window.addEventListener("DOMContentLoaded", toggleHandler);
+
+/* Project overlays */
+
+let on = (a, b) => {
+	document.getElementById(a).style.display = "grid";
+	document.getElementById(b).style.display = "none";
+}
+
+let off = (a, b) => {
+	document.getElementById(a).style.display = "none";
+	document.getElementById(b).style.display = "grid";
+}
+
+let allOff = () => {
+	document.getElementById('overlay1').style.display = "none";
+	document.getElementById('overlay2').style.display = "none";
+
+	/* Remember to add new projects */
+
+	document.getElementById('article3').style.display = "grid";
+}
+
+document.getElementById('button3').addEventListener('click', allOff);
