@@ -55,8 +55,12 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
-@media only screen and (max-device-width : 1200px) {
-    
+.flex-center {
+    display: flex;
+}
+
+.flexed-center {
+    margin: auto;
 }
 
 /* Header */
@@ -172,7 +176,7 @@ header {
     display: grid;
     grid-template: 12.5% 75% 12.5% / 1fr;
     width: 1400px;
-    height: 635px;
+    height: 650px;
     background-color: #161616;
     box-shadow:
     6px 6px 10px   black, 
@@ -222,6 +226,11 @@ nav {
     display: grid;
     grid-template: 1fr / repeat(4, 1fr);
 }
+  
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
 
 .menu-button {
     grid: 1fr / 1fr;
@@ -244,11 +253,74 @@ nav {
     border-right: 2px solid #161616;
 }
 
+#burgernav {
+    display: none;
+}
+
 @media only screen and (max-device-width : 1200px) {
 
     nav {
-        grid-template: repeat(4, 1fr) / 1fr;   
+        display: none;   
     } 
+
+    #burgernav {
+        grid: 1fr / 1fr;
+        display: grid; 
+        grid-template: repeat(5, auto) / 1fr;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0; 
+    }
+
+
+    #hiddenLinks {
+        display: none;
+    }
+
+    #hiddenLinks .menu-button {
+        width: 100%;
+        grid: auto / 1fr;
+    }
+
+    #top-bar {
+        grid: 1fr / 1fr;
+        display: grid;
+        grid-template: 1fr / auto auto;
+    }
+
+    #top-bar h1 {
+        grid: 1fr / 1fr;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    #top-bar a {
+        grid: 1fr / 1fr;
+        font-size: 1.5rem;
+        text-align: right;
+    }
+    
+    .burgernav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+      
+    .burgernav a.icon {
+        background: black;
+        display: inline;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .burgernav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
 
 }
 
@@ -257,7 +329,7 @@ nav {
 #section1, #section2, #section3, #section4 {
     grid: 1fr / 1fr;
     display: none;
-    color: #F5F5F5;  
+    color: #F5F5F5; 
 }
 
 article, .overlay {
@@ -265,7 +337,6 @@ article, .overlay {
     padding: 50px 80px 50px 80px;
     gap: 50px;
     text-align: justify;
-    align-items: center;
 }
 
 @media only screen and (max-device-width : 1200px) {
@@ -293,7 +364,8 @@ article, .overlay {
 
 #intro-picture {
     grid: 1fr / 1fr;
-    width: 100%;
+    width: 75%;
+    max-width: 400px;
     height: auto;
     border: 2px solid black;
     border-radius: 50%;

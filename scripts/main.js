@@ -98,3 +98,14 @@ let allOff = () => {
 }
 
 document.getElementById('button3').addEventListener('click', allOff);
+
+/* Burgernav */
+
+const toggleBurger = () => {
+	let a = document.getElementById('hiddenLinks');
+	if (a.style.display === "block") {
+	  a.style.display = "none";
+	} else {
+	  a.style.display = "block";
+	}
+}
