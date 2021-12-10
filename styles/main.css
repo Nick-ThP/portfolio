@@ -208,6 +208,7 @@ header {
     }
 
     #main-content {
+        grid-template: repeat(3, auto) / 1fr;
         width: auto;
         height: auto;
     }
@@ -267,6 +268,19 @@ article, .overlay {
     align-items: center;
 }
 
+@media only screen and (max-device-width : 1200px) {
+
+    article, .overlay {
+        padding: 30px 20px 30px 20px;
+        gap: 30px;
+    }
+
+    article:last-child, .overlay:last-child {
+        margin-bottom: 20px;
+    }
+
+}
+
 /* Section 1 - Introduction */
 
 #article1 { 
@@ -290,7 +304,7 @@ article, .overlay {
 @media only screen and (max-device-width : 1200px) {
 
     #article1 { 
-        grid-template: repeat(3, 1fr) / 1fr;
+        grid-template: repeat(3, auto) / 1fr;
     }
 
 }
@@ -310,11 +324,18 @@ article, .overlay {
 .project {
     grid: 1fr / 1fr;
     background-color: #ff4000;
+    cursor: pointer;
 }
 
 .project img {
     width: 100%;
     height: auto;
+}
+
+@media only screen and (max-device-width : 1200px) {
+    #article3 {
+        grid-template: repeat(5, auto) / 1fr;
+    }
 }
 
 /* Section 3 - Overlays */
@@ -349,7 +370,9 @@ article, .overlay {
 }
 
 @media only screen and (max-device-width : 1200px) {
-
+    .overlay {
+        grid-template: auto auto / 1fr;
+    }
 }
 
 /* Section 4 - Contact */
@@ -418,18 +441,25 @@ footer .fab, footer .fas {
 @media only screen and (max-device-width : 1200px) {
 
     footer {
-        grid-template: 1fr 1fr / 1fr;
+        grid-template: auto auto / 1fr;
     }
 
     #left-footer, #right-footer {
         grid: 1fr / 1fr;
         justify-content: center;
         gap: 1rem;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 20px 10px;
     }
 
-    .fab, .fas, .far {
+    .fab, .fas {
         font-size: 1rem;
         opacity: 0.7;
     }
 
+    #copyright {
+        width: 100%;
+        text-align: center;
+    }
 }
