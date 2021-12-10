@@ -226,13 +226,8 @@ nav {
     display: grid;
     grid-template: 1fr / repeat(4, 1fr);
 }
-  
-.active {
-    background-color: #04AA6D;
-    color: white;
-}
 
-.menu-button {
+nav .menu-button {
     grid: 1fr / 1fr;
     text-align: center;
     font-family: 'Oswald', serif;
@@ -245,7 +240,7 @@ nav {
     color: #F5F5F5;
 }
 
-.menu-button:hover {
+nav .menu-button:hover {
     color: #ff4000;
 }
 
@@ -271,6 +266,8 @@ nav {
         background-color: #333;
         position: fixed;
         top: 0; 
+        left: 0;
+        width: 100%;
     }
 
     #hiddenLinks {
@@ -280,12 +277,25 @@ nav {
     #hiddenLinks .menu-button {
         width: 100%;
         grid: auto / 1fr;
+        text-align: center;
+        font-family: 'Oswald', serif;
+        cursor: pointer;
+        font-weight: bold;
+        align-content: center;
+        font-size: 1.7rem;
+        padding: 20px;
+        transition-duration: 0.5s;
+        color: #F5F5F5;
     }
 
     #top-bar {
         grid: 1fr / 1fr;
         display: grid;
         grid-template: 1fr / auto auto;
+        background:#ff4000;
+        padding: 20px;
+        align-content: center;
+        font-family: 'Oswald', serif;
     }
 
     #top-bar h1 {
@@ -319,6 +329,11 @@ nav {
     .burgernav a:hover {
         background-color: #ddd;
         color: black;
+    }
+
+    .active {
+        background-color: #04AA6D;
+        color: white;
     }
 
 }

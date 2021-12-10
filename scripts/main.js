@@ -109,3 +109,8 @@ const toggleBurger = () => {
 	  a.style.display = "block";
 	}
 }
+
+const closeAfter = () => {
+	let a = document.getElementById('hiddenLinks');
+	a.style.display = "none";
+}
