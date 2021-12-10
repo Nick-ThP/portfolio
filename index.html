@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/721d31e5d6.js" crossorigin="anonymous"></script>
 <body>
 
-<!-- Welcome content -->
+<!-- Header -->
 
     <header id="header">
         <div class="heading">
@@ -17,17 +17,15 @@
             <h2>UX-minded web developer</h2>
         </div>
         <img src="images/carsten1.png" alt="nicklas" id="nicklas">
-        <div id="arrow-effect">
-            <a href="#wrapper"><i class="fas fa-arrow-alt-circle-down"></i></a>
-        </div>
+        <a href="#wrapper"><i class="fas fa-arrow-alt-circle-down arrow-down"></i></a>
     </header>
    
-<!-- Main content  -->
+<!-- Main content -->
 
     <div id="wrapper"> 
         <div id="main-content">
 
-        <!-- Navigation bar-->
+        <!-- Navigation-->
 
             <nav>
                 <a class="menu-button" id="button1" onclick="show('section1', 'button1');">Introduction</a>
@@ -36,130 +34,128 @@
                 <a class="menu-button" id="button4" onclick="show('section4', 'button4');">Contact</a>
             </nav>
 
-        <!-- Portfolio information -->
+        <!-- Section 1 - Introduction -->
 
-            <div id="toggled-content">
-                <section id="section1">
-
-                    <!-- Introduction -->
-
-                    <article id="article1">
-                        <div class="article1-column">
-                            <h3>Welcome</h3>
-                            <br>
-                            <p>
-                            Welcome to my portfolio. This quickly lead me into UX-design, 
-                            persuasive design, concept development and that sort of thing. 
-                            I eventually ended up with a master's degree in Information Architecture which culminated in a thesis
-                            about semantically structured data and how this can help create better product recommendations.
-                            However, after finishing my studies I realised that the UX-market is quite saturated in terms of
-                            the specific types of job listings i wanted to accommodate. 
-                            This made me pick up the books once again in order to dive into web development.
-                            Quisque quis enim molestie, egestas lorem malesuada, blandit tortor. 
-                            Duis scelerisque sagittis velit vitae efficitur.
-                            </p>
-                        </div>
-                        <div class="article1-column">
-                            <img id="intro-picture" src="/images/portrait.jpg" alt="picture of nicklas">
-                        </div>
-                        <div class="article1-column">
-                            <h3>Motivation</h3>
-                            <br>
-                            <p>
-                            Donec leo ante, sollicitudin vel rutrum ut, tincidunt et augue. Aliquam non pharetra sem. 
-                            Nam lectus sapien, accumsan et sem non, tempus ultrices nisi. 
-                            Nam imperdiet est quis fermentum interdum. Maecenas feugiat commodo ultricies. 
-                            Sed metus enim, tristique vel ligula sit amet, varius ultricies nisi. 
-                            Nullam fringilla fermentum nunc, sit amet elementum metus fringilla vitae. 
-                            Quisque quis enim molestie, egestas lorem malesuada, blandit tortor. 
-                            Duis scelerisque sagittis velit vitae efficitur.
-                            However, after finishing my studies I realised that the UX-market is quite saturated in terms of
-                            the specific types of job listings i wanted to accommodate. Duis scelerisque sagittis velit vitae efficitur.
-                            </p>
-                        </div>
-                        
-                    </article>
-                </section>
-
-                <!-- Background -->
-
-                <section id="section2"><h3>Test 2</h3></section>
-
-                <!-- Projects -->
-
-                <section id="section3">
-
-                    <!-- Project articles-->
-
-                    <article id="article3">
-                        <div class="project" onclick="on('overlay1', 'article3');">
-                            <h3>Norriq</h3>
-                            <p>
-                            Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
-                            the specific types of job listings i wanted to accommodate. 
-                            </p>
-                            <img class="project-picture" src="/images/forside-briller.png">
-                        </div>
-                        <div class="project" onclick="on('overlay2', 'article3');">
-                            <h3>Norriq</h3>
-                            <p>
-                            Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
-                            the specific types of job listings i wanted to accommodate. 
-                            </p>
-                            <img class="project-picture" src="/images/forside-briller.png">
-                        </div>
-                        <div class="project" onclick="on('overlay3', 'article3');">
-                            <h3>Norriq</h3>
-                            <p>
-                            Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
-                            the specific types of job listings i wanted to accommodate.
-                            </p>
-                            <img class="project-picture" src="/images/forside-briller.png">
-                        </div>
-                    </article>
-
-                    <!-- Project overlays -->
-
-                    <div id="overlay1" class="overlay">
-                        <div class="overlay-text">
-                            <i class="fas fa-angle-double-left" onclick="off('overlay1', 'article3');"></i>
-                            <br><br>
-                            <hr style="height:1px;border-width:0;color:#f5f5f5;background-color:#f5f5f5">
-                            <br><br>
-                            <h4>Overlay testing</h4>
-                            <br>
-                            <p>
-                            Donec leo ante, sollicitudin vel rutrum ut, tincidunt et augue. Aliquam non pharetra sem. 
-                            Nam lectus sapien, accumsan et sem non, tempus ultrices nisi. 
-                            Nam imperdiet est quis fermentum interdum. Maecenas feugiat commodo ultricies. 
-                            Sed metus enim, tristique vel ligula sit amet, varius ultricies nisi. 
-                            Nullam fringilla fermentum nunc, sit amet elementum metus fringilla vitae. 
-                            Quisque quis enim molestie, egestas lorem malesuada, blandit tortor. 
-                            Duis scelerisque sagittis velit vitae efficitur. Duis scelerisque sagittis velit vitae efficitur.
-                            </p>
-                        </div>
-                        <div class="overlay-gallery">
-                            <img class="overlay-picture" src="/images/forside-briller.png">
-                            <img class="overlay-picture" src="/images/forside-briller.png">
-                            <img class="overlay-picture" src="/images/forside-briller.png">
-                            <img class="overlay-picture" src="/images/forside-briller.png">
-                            <img class="overlay-picture" src="/images/forside-briller.png">
-                            <img class="overlay-picture" src="/images/forside-briller.png">
-                            <img class="overlay-picture" src="/images/forside-briller.png">
-                            <img class="overlay-picture" src="/images/forside-briller.png">
-                            <img class="overlay-picture" src="/images/forside-briller.png">
-                            <img class="overlay-picture" src="/images/forside-briller.png">
-                            <img class="overlay-picture" src="/images/forside-briller.png">
-                            <img class="overlay-picture" src="/images/forside-briller.png">
-                        </div>
+            <section id="section1">
+                <article id="article1">
+                    <div class="article1-column">
+                        <h3>Welcome</h3>
+                        <br>
+                        <p>
+                                Welcome to my portfolio. This quickly lead me into UX-design, 
+                                persuasive design, concept development and that sort of thing. 
+                                I eventually ended up with a master's degree in Information Architecture which culminated in a thesis
+                                about semantically structured data and how this can help create better product recommendations.
+                                However, after finishing my studies I realised that the UX-market is quite saturated in terms of
+                                the specific types of job listings i wanted to accommodate. 
+                                This made me pick up the books once again in order to dive into web development.
+                                Quisque quis enim molestie, egestas lorem malesuada, blandit tortor. 
+                                Duis scelerisque sagittis velit vitae efficitur.
+                        </p>
                     </div>
+                    <div class="article1-column">
+                        <img id="intro-picture" src="/images/portrait.jpg" alt="picture of nicklas">
+                    </div>
+                    <div class="article1-column">
+                        <h3>Motivation</h3>
+                        <br>
+                        <p>
+                                Donec leo ante, sollicitudin vel rutrum ut, tincidunt et augue. Aliquam non pharetra sem. 
+                                Nam lectus sapien, accumsan et sem non, tempus ultrices nisi. 
+                                Nam imperdiet est quis fermentum interdum. Maecenas feugiat commodo ultricies. 
+                                Sed metus enim, tristique vel ligula sit amet, varius ultricies nisi. 
+                                Nullam fringilla fermentum nunc, sit amet elementum metus fringilla vitae. 
+                                Quisque quis enim molestie, egestas lorem malesuada, blandit tortor. 
+                                Duis scelerisque sagittis velit vitae efficitur.
+                                However, after finishing my studies I realised that the UX-market is quite saturated in terms of
+                                the specific types of job listings i wanted to accommodate. Duis scelerisque sagittis velit vitae efficitur.
+                        </p>
+                    </div>      
+                </article>
+            </section>
 
-                </section>
+        <!-- Section 2 - Background --> 
+            
+            <section id="section2">
+                <article id="article2">
+                    <h3>Norriq</h3>
+                </article>
+            </section>
 
-                <!-- Animations -->
+        <!-- Section 3 - Projects-->
 
-                <section id="section4"><h3>Test 4</h3></section>
-            </div>
+            <section id="section3">
+
+                <!-- Project selection -->
+
+                <article id="article3">
+                    <div class="project" onclick="on('overlay1', 'article3');">
+                        <h3>Norriq</h3>
+                        <p>
+                                Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
+                                the specific types of job listings i wanted to accommodate. 
+                        </p>
+                        <img src="/images/forside-briller.png">
+                    </div>
+                    <div class="project" onclick="on('overlay2', 'article3');">
+                        <h3>Norriq</h3>
+                        <p>
+                                Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
+                                the specific types of job listings i wanted to accommodate. 
+                        </p>
+                        <img src="/images/forside-briller.png">
+                    </div>
+                    <div class="project" onclick="on('overlay3', 'article3');">
+                        <h3>Norriq</h3>
+                        <p>
+                                Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
+                                the specific types of job listings i wanted to accommodate.
+                        </p>
+                        <img src="/images/forside-briller.png">
+                    </div>
+                </article>
+
+                <!-- Project overlays -->
+
+                <div id="overlay1" class="overlay">
+                    <div class="overlay-text">
+                        <i class="fas fa-angle-double-left" onclick="off('overlay1', 'article3');"></i>
+                        <br><br>
+                        <hr style="height:1px;border-width:0;color:#f5f5f5;background-color:#f5f5f5">
+                        <br><br>
+                        <h4>Overlay testing</h4>
+                        <br>
+                        <p>
+                                Donec leo ante, sollicitudin vel rutrum ut, tincidunt et augue. Aliquam non pharetra sem. 
+                                Nam lectus sapien, accumsan et sem non, tempus ultrices nisi. 
+                                Nam imperdiet est quis fermentum interdum. Maecenas feugiat commodo ultricies. 
+                                Sed metus enim, tristique vel ligula sit amet, varius ultricies nisi. 
+                                Nullam fringilla fermentum nunc, sit amet elementum metus fringilla vitae. 
+                                Quisque quis enim molestie, egestas lorem malesuada, blandit tortor. 
+                                Duis scelerisque sagittis velit vitae efficitur. Duis scelerisque sagittis velit vitae efficitur.
+                        </p>
+                    </div>
+                    <div class="overlay-gallery">
+                        <img class="overlay-picture" src="/images/forside-briller.png">
+                        <img class="overlay-picture" src="/images/forside-briller.png">
+                        <img class="overlay-picture" src="/images/forside-briller.png">
+                        <img class="overlay-picture" src="/images/forside-briller.png">
+                        <img class="overlay-picture" src="/images/forside-briller.png">
+                        <img class="overlay-picture" src="/images/forside-briller.png">
+                        <img class="overlay-picture" src="/images/forside-briller.png">
+                        <img class="overlay-picture" src="/images/forside-briller.png">
+                        <img class="overlay-picture" src="/images/forside-briller.png">
+                    </div>
+                </div>
+            </section>
+
+        <!-- Section 4 - Contact -->
+
+            <section id="section4">
+                <article id="article4">
+                    <h3>Norriq</h3>
+                </article>
+            </section>
 
         <!-- Footer content-->
 
