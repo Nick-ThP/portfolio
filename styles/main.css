@@ -209,11 +209,11 @@ header {
 
     #wrapper {
         height: auto;
-        margin-top: 76px;
+        margin-top: 9vh;
     }
 
     #main-content {
-        grid-template: repeat(3, auto) / 1fr;
+        grid-template: repeat(2, auto) / 1fr;
         width: auto;
         height: auto;
     }
@@ -260,15 +260,15 @@ nav .menu-button:hover {
     } 
 
     #burgernav {
-        grid: 1fr / 1fr;
         display: grid; 
-        grid-template: repeat(5, auto) / 1fr;
-        overflow: hidden;
-        background-color: #333;
+        grid-template: repeat(5, auto) / 1fr;;
         position: fixed;
         top: 0; 
         left: 0;
+        z-index: 1;
         width: 100%;
+        font-family: 'Oswald', serif;
+        align-content: center;
     }
 
     #hiddenLinks {
@@ -276,65 +276,40 @@ nav .menu-button:hover {
     }
 
     #hiddenLinks .menu-button {
-        width: 100%;
-        grid: auto / 1fr;
+        grid: 1fr / 1fr;
         text-align: center;
-        font-family: 'Oswald', serif;
         cursor: pointer;
+        font-size: 1.5rem;
         font-weight: bold;
-        align-content: center;
-        font-size: 1.7rem;
-        padding: 20px;
         transition-duration: 0.5s;
+        padding: 20px;
         color: #F5F5F5;
+        display: block;
+        background-color: #2a2a2a;
+        border-right: none;
+        border-bottom: 2px solid #161616;
     }
 
     #top-bar {
         grid: 1fr / 1fr;
         display: grid;
         grid-template: 1fr / auto auto;
-        background:#ff4000;
+        background:black;
         padding: 20px;
-        align-content: center;
-        font-family: 'Oswald', serif;
+        color: #f5f5f5;
+        box-shadow: 0 0 10px black;
     }
 
     #top-bar h1 {
         grid: 1fr / 1fr;
-        font-size: 1.5rem;
+        font-size: 6vw;
         text-align: left;
     }
 
     #top-bar a {
         grid: 1fr / 1fr;
-        font-size: 1.5rem;
+        font-size: 6vw;
         text-align: right;
-    }
-    
-    .burgernav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
-      
-    .burgernav a.icon {
-        background: black;
-        display: inline;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    
-    .burgernav a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-
-    .active {
-        background-color: #04AA6D;
-        color: white;
     }
 
 }
@@ -419,9 +394,20 @@ article, .overlay {
     height: auto;
 }
 
+#mobile-heading {
+    display: none;
+}
+
 @media only screen and (max-device-width : 1200px) {
+    
     #article3 {
         grid-template: repeat(5, auto) / 1fr;
+    }
+
+    #mobile-heading {
+        display: block;
+        margin-left: 20px;
+        margin-top: 30px;
     }
 }
 
@@ -477,8 +463,10 @@ footer {
     width: 100%;
     background-color: #2a2a2a;
     color: #F5F5F5;
+    font-size: 2rem;
     border-top: 2px solid black;
     padding: 0px 35px;
+    opacity: 0.7;
 }
 
 #left-footer {
@@ -497,15 +485,9 @@ footer {
     gap: 2rem;
 }
 
-footer .fab, footer .fas {
-    font-size: 2rem;
-    opacity: 0.7;
-}
-
 .img-logo {
-    width: 28px;
-    height: 28px;
-    opacity: 0.7;
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 .link {
@@ -522,7 +504,7 @@ footer .fab, footer .fas {
     font-family: 'Oswald';
     font-weight: lighter;
     letter-spacing: 0.1rem;
-    opacity: 0.7;
+    font-size: 1rem;
 }
 
 @media only screen and (max-device-width : 1200px) {
@@ -538,11 +520,6 @@ footer .fab, footer .fas {
         flex-wrap: wrap;
         text-align: center;
         margin: 20px 10px;
-    }
-
-    .fab, .fas {
-        font-size: 1rem;
-        opacity: 0.7;
     }
 
     #copyright {

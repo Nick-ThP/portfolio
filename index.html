@@ -16,7 +16,7 @@
             <h1>Nicklas Poulsen Portfolio</h1>
             <h2>UX-minded web developer</h2>
         </div>
-        <img src="images/carsten1.png" alt="nicklas" id="nicklas">
+        <img src="images/carsten1.png" id="nicklas" alt="nicklas">
         <a href="#wrapper"><i class="fas fa-arrow-alt-circle-down arrow-down"></i></a>
     </header>
    
@@ -40,7 +40,7 @@
                     <a class="icon" onclick="toggleBurger();"><i class="fa fa-bars"></i></a>
                 </div>
                 <div id="hiddenLinks">
-                    <a class="menu-button" id="button1" onclick="show('section1', 'button1');closeAfter();">Introduction</a>
+                    <button><a class="menu-button" id="button1" onclick="show('section1', 'button1');closeAfter();">Introduction</a></button>
                     <a class="menu-button" id="button2" onclick="show('section2', 'button2');closeAfter();">Background</a>
                     <a class="menu-button" id="button3" onclick="show('section3', 'button3');closeAfter();">Projects</a>
                     <a class="menu-button" id="button4" onclick="show('section4', 'button4');closeAfter();">Contact</a>
@@ -106,6 +106,7 @@
             <section id="section3">
 
                 <!-- Project selection -->
+                <div id="mobile-heading"><h3>Projects</h3></div>
 
                 <article id="article3">
                     <div class="project" onclick="on('overlay1', 'article3');">
@@ -187,6 +188,8 @@
                     <i class="fab fa-git" alt="git logo"></i>
                     <i class="fab fa-figma" alt="figma logo"></i>
                     <i class="fab fa-sketch" alt="sketch logo"></i>
+                    <img src="images/photoshop.png" class="img-logo" alt="photoshop logo">
+                    <img src="images/illustrator.png" class="img-logo" alt="illustrator logo">
                 </div>
                 <div id="right-footer">
                     <p id="copyright">© Nicklas Poulsen 2021</p>
