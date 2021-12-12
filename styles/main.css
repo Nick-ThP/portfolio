@@ -268,7 +268,7 @@ nav .menu-button:hover {
         left: 0;
         z-index: 1;
         width: 100%;
-        font-family: 'Oswald', serif;
+        font-family: 'Oswald';
         align-content: center;
     }
 
@@ -325,7 +325,6 @@ nav .menu-button:hover {
 article, .overlay {
     display: grid;
     padding: 50px 80px 50px 80px;
-    align-items: center;
     gap: 50px;
     text-align: justify;
 }
@@ -338,7 +337,7 @@ article, .overlay {
     }
 
     article:last-child, .overlay:last-child {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
 }
@@ -381,18 +380,86 @@ article, .overlay {
 /* Section 3 - Projects */
 
 #article3 {   
-    grid-template: 1fr / repeat(5, 1fr);
+    grid-template: 1fr / repeat(4, 1fr);
 }
 
 .article3-column {
     grid: 1fr / 1fr;
-    background-color: #ff4000;
+    background-color: #2a2a2a;
     cursor: pointer;
+    background-image: url(../images/forside-helse.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 3px 3px 6px black;
+    box-shadow:
+    6px 6px 10px   black, 
+    5.75px 5.75px  black, 
+    5.5px 5.5px    black, 
+    5.25px 5.25px  black, 
+    5px 5px        black, 
+    4.75px 4.75px  black, 
+    4.5px 4.5px    black, 
+    4.25px 4.25px  black,
+    4px 4px        black,
+    3.75px 3.75px  black,
+    3.5px 3.5px    black,
+    3.25px 3.25px  black,
+    3px 3px        black,
+    2.75px 2.75px  black,
+    2.5px 2.5px    black,
+    2.25px 2.25px  black,
+    2px 2px        black,
+    1.75px 1.75px  black,
+    1.5px 1.5px    black,
+    1.25px 1.25px  black,
+    1px 1px        black,
+    0.75px 0.75px  black,
+    0.5px 0.5px    black,
+    0.25px 0.25px  black;
 }
 
-.article3-column img {
-    width: 100%;
-    height: auto;
+.article3-column:hover {
+    box-shadow:
+    6px 6px 10px   #ff4000, 
+    5.75px 5.75px  #ff4000, 
+    5.5px 5.5px    #ff4000, 
+    5.25px 5.25px  #ff4000, 
+    5px 5px        #ff4000, 
+    4.75px 4.75px  #ff4000,
+    4.5px 4.5px    #ff4000, 
+    4.25px 4.25px  #ff4000,
+    4px 4px        #ff4000,
+    3.75px 3.75px  #ff4000,
+    3.5px 3.5px    #ff4000,
+    3.25px 3.25px  #ff4000,
+    3px 3px        #ff4000,
+    2.75px 2.75px  #ff4000,
+    2.5px 2.5px    #ff4000,
+    2.25px 2.25px  #ff4000,
+    2px 2px        #ff4000,
+    1.75px 1.75px  #ff4000,
+    1.5px 1.5px    #ff4000,
+    1.25px 1.25px  #ff4000,
+    1px 1px        #ff4000,
+    0.75px 0.75px  #ff4000,
+    0.5px 0.5px    #ff4000,
+    0.25px 0.25px  #ff4000;
+}
+
+.article3-column:active {
+    box-shadow: none;
+}
+
+.article3-column h2 {
+    padding: 20px 20px 0px 20px;
+}
+
+.article3-column p {
+    padding: 0px 20px 20px 20px;
+}
+
+.whitespace {
+    height: 25vh;
 }
 
 #mobile-heading {
@@ -436,11 +503,17 @@ article, .overlay {
     height: auto;
 }
 
-.overlay .fas {
+.overlay i {
     cursor: pointer;
     font-size: 3rem;
     opacity: 1;
     color: #f5f5f5;
+    transition-duration: 0.5s;
+}
+
+.overlay i:hover {
+    opacity: 1;
+    color: #ff4000;
 }
 
 @media only screen and (max-device-width : 1200px) {
@@ -460,6 +533,11 @@ article, .overlay {
     grid: 1fr / 1fr;
 }
 
+.contact-info {
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+}
+
 @media only screen and (max-device-width : 1200px) {
     #article4 {
         grid-template: auto auto / 1fr;
@@ -469,7 +547,9 @@ article, .overlay {
 /* Section 4 - Form */
 
 form {
-    padding-left: 150px;
+    padding-left: 80px;
+    margin-left: 100px;
+    border-left: 1px solid white;
 }
 
 .form-group {
@@ -491,6 +571,7 @@ form {
     line-height: 1.5;
     color: #161616;
     background-color: white;  
+    border: 1px solid white;
 }
 
 textarea {
@@ -500,7 +581,7 @@ textarea {
 }
 
 .form-button {
-    width: 33%;
+    width: 50%;
     color: #f5f5f5;
     background-color: transparent;
     border: 1px solid white;
@@ -509,6 +590,8 @@ textarea {
     cursor: pointer;
     font-size: 1rem;
     padding: 1rem;
+    transition-duration: 0.5s;
+    margin-top: 1rem;
 }
     
 .form-button:hover {
@@ -525,7 +608,9 @@ textarea {
 
 @media only screen and (max-device-width : 1200px) {
     form {
-        padding: 0px;
+        padding-left: none;
+        margin-left: none;
+        border-left: none;
     }
 
     .form-button {
