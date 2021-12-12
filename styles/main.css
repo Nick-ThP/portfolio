@@ -359,8 +359,8 @@ article, .overlay {
     height: auto;
     border: 2px solid black;
     border-radius: 50%;
-    padding: 1rem;
     background-color: #2a2a2a;
+    box-shadow: 0 0 10px 0 black;
 }
 
 @media only screen and (max-device-width : 1200px) {
@@ -373,7 +373,30 @@ article, .overlay {
 
 /* Section 2 - Background */
 
+#article2 { 
+    grid-template: 1fr / repeat(3, 1fr);
+}
+
+.article2-column {
+    grid: 1fr / 1fr;
+}
+
+#education {
+    background-color: #2a2a2a;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 black;
+}
+
+#education h3 {
+    font-weight: lighter;
+}
+
+
 @media only screen and (max-device-width : 1200px) {
+
+    #article2 { 
+        grid-template: repeat(3, auto) / 1fr;
+    }
 
 }
 
@@ -554,7 +577,6 @@ form {
 
 .form-group {
     margin-bottom: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .input-group {
@@ -574,17 +596,21 @@ form {
     border: 1px solid white;
 }
 
+label {
+    height: auto;
+    color: #f5f5f5;
+}
+
 textarea {
     height: auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+    color: #161616;
 }
 
 .form-button {
     width: 50%;
     color: #f5f5f5;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #f5f5f5;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -601,15 +627,20 @@ textarea {
 }
 
 .form-button:active {
-    color: white;
+    color: #161616;
     background-color: #ff4000;;
     border: 1px solid #ff4000;
 }
 
+.form-control, label, textarea, .form-button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 @media only screen and (max-device-width : 1200px) {
+
     form {
-        padding-left: none;
-        margin-left: none;
+        padding-left: 0;
+        margin-left: 0;
         border-left: none;
     }
 
