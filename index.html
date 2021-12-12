@@ -14,7 +14,7 @@
     <header id="header">
         <div class="heading">
             <h1>Nicklas Poulsen Portfolio</h1>
-            <h2>UX-minded web developer</h2>
+            <p>UX-minded web developer</p>
         </div>
         <img src="images/carsten1.png" id="nicklas" alt="nicklas">
         <a href="#wrapper"><i class="fas fa-arrow-alt-circle-down arrow-down"></i></a>
@@ -52,7 +52,7 @@
             <section id="section1">
                 <article id="article1">
                     <div class="article1-column">
-                        <h3>Welcome</h3>
+                        <h2>Welcome</h2>
                         <br>
                         <p>
                                 Welcome to my portfolio. This quickly lead me into UX-design, 
@@ -73,7 +73,7 @@
                         <img id="intro-picture" class="flexed-center" src="/images/portrait.jpg" alt="picture of nicklas">
                     </div>
                     <div class="article1-column">
-                        <h3>Motivation</h3>
+                        <h2>Motivation</h2>
                         <br>
                         <p>
                                 Welcome to my portfolio. This quickly lead me into UX-design, 
@@ -97,7 +97,7 @@
             
             <section id="section2">
                 <article id="article2">
-                    <h3>Norriq</h3>
+                    <h2>Norriq</h2>
                 </article>
             </section>
 
@@ -106,11 +106,11 @@
             <section id="section3">
 
                 <!-- Project selection -->
-                <div id="mobile-heading"><h3>Projects</h3></div>
+                <div id="mobile-heading"><h2>Projects</h2></div>
 
                 <article id="article3">
                     <div class="article3-column" onclick="on('overlay1', 'article3');">
-                        <h3>Norriq</h3>
+                        <h2>Norriq</h2>
                         <p>
                                 Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
                                 the specific types of job listings i wanted to accommodate. 
@@ -118,7 +118,7 @@
                         <img src="/images/forside-briller.png">
                     </div>
                     <div class="article3-column" onclick="on('overlay2', 'article3');">
-                        <h3>Norriq</h3>
+                        <h2>Norriq</h2>
                         <p>
                                 Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
                                 the specific types of job listings i wanted to accommodate. 
@@ -126,7 +126,7 @@
                         <img src="/images/forside-briller.png">
                     </div>
                     <div class="article3-column" onclick="on('overlay3', 'article3');">
-                        <h3>Norriq</h3>
+                        <h2>Norriq</h2>
                         <p>
                                 Dette projekt er bla bla bla. However, after finishing my studies I realised that the UX-market is quite saturated in terms of
                                 the specific types of job listings i wanted to accommodate.
@@ -143,7 +143,7 @@
                         <br><br>
                         <hr style="height:1px;border-width:0;color:#f5f5f5;background-color:#f5f5f5">
                         <br><br>
-                        <h4>Overlay testing</h4>
+                        <h2>Overlay testing</h2>
                         <br>
                         <p>
                                 Donec leo ante, sollicitudin vel rutrum ut, tincidunt et augue. Aliquam non pharetra sem. 
@@ -174,46 +174,44 @@
             <section id="section4">
                 <article id="article4">
                     <div class="article4-column">
-                        <h3>Contact info like e-mail and maybe phone</h3>
+                        <h2>Contact me!</h2>
+                        <br>
+                        <p>
+                                I'll be happy to get in touch in case you are looking for a candidate with my competencies.
+                                Even if you just have a recommendation for a place to send an application I'll be grateful.
+                                I'm open for work that revolves around web development but I am especially interested
+                                if there is room to design user experience as well.
+                        </p>
+                        <br><br>
+                        <hr style="height:1px;border-width:0;color:#f5f5f5;background-color:#f5f5f5">
+                        <br><br>
+                        <p>Email: nicklas_tp@hotmail.com</p>
+                        <p>Phone: (+45) 21618160</p>
                     </div>
                     <div class="article4-column">
-                        <div id="fcf-form">
-                        <h3>Contact me</h3>
-                    
-                            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact.php">
-                                
-                                <div class="fcf-form-group">
-                                    <label for="Name" class="fcf-label">Your name</label>
-                                    <div class="fcf-input-group">
-                                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-                                    </div>
+                        <form method="post" action="contact.php">
+                            <div class="form-group">
+                                <label for="Name" class="label">Name</label>
+                                <div class="input-group">
+                                    <input type="text" id="Name" name="Name" class="form-control" required>
                                 </div>
-                        
-                                <div class="fcf-form-group">
-                                    <label for="Email" class="fcf-label">Your email address</label>
-                                    <div class="fcf-input-group">
-                                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Email" class="label">Email</label>
+                                <div class="input-group">
+                                    <input type="email" id="Email" name="Email" class="form-control" required>
                                 </div>
-                        
-                                <div class="fcf-form-group">
-                                    <label for="Message" class="fcf-label">Your message</label>
-                                    <div class="fcf-input-group">
-                                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Message" class="label">Message</label>
+                                <div class="input-group">
+                                    <textarea id="Message" name="Message" class="form-control" rows="3" maxlength="2000" required></textarea>
                                 </div>
-                        
-                                <div class="fcf-form-group">
-                                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
-                                </div>
-                        
-                                <div class="fcf-credit" id="fcf-credit">
-                                Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
-                                </div>
-                        
-                            </form>
-
-                        </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" id="button" class="form-button">Send Message</button>
+                            </div>
+                        </form>
                     </div>
                 </article>
             </section>

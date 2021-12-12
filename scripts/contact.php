@@ -68,4 +68,8 @@ if (isset($_POST['Email'])) {
 
 <?php
 }
+
+/* https://www.freecontactform.com/form-guides/html-email-form */
+
 ?>
+
