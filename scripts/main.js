@@ -20,6 +20,15 @@ const fadeOutOnScroll = element => {
 	if (opacity >= 0) {
 		element.style.opacity = opacity;
 	}
+
+	/* Force hide */
+
+	if (opacity < 0.001) {
+		element.style.visibility = 'hidden';
+	} else {
+		element.style.visibility = 'visible';
+	}	
+
 }
 
 /* Execution of fade script*/
@@ -96,7 +105,7 @@ const allOff = () => {
 
 document.getElementById('button3').addEventListener('click', allOff);
 
-/* Burgernav */
+/* Burger icon menu for small screens */
 
 const toggleBurger = () => {
 	let a = document.getElementById('hiddenLinks');

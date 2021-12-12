@@ -33,11 +33,11 @@
     font-weight: lighter;
 }
 
-/* General */
+/* General settings*/
 
 html {
     background: linear-gradient(to bottom, #ff4000 0%, #686868 100%) fixed;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 body {
@@ -158,9 +158,11 @@ header {
 }
 
 @media only screen and (max-device-width : 1200px) {
+
     header {
         display: none;
     }
+
 }
 
 /* Main content */
@@ -231,15 +233,15 @@ nav {
 
 nav .menu-button {
     grid: 1fr / 1fr;
-    text-align: center;
-    font-family: 'Oswald', serif;
-    cursor: pointer;
-    font-weight: bold;
     align-content: center;
+    font-family: 'Oswald';
+    font-weight: bold;
     font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    color: #f5f5f5;
     padding: 15px;
     transition-duration: 0.5s;
-    color: #F5F5F5;
 }
 
 nav .menu-button:hover {
@@ -250,7 +252,7 @@ nav .menu-button:hover {
     border-right: 2px solid #161616;
 }
 
-#burgernav {
+#burger-nav {
     display: none;
 }
 
@@ -260,34 +262,16 @@ nav .menu-button:hover {
         display: none;   
     } 
 
-    #burgernav {
+    #burger-nav {
         display: grid; 
-        grid-template: repeat(5, auto) / 1fr;;
+        grid-template: repeat(5, auto) / 1fr;
+        font-family: 'Oswald';
         position: fixed;
         top: 0; 
         left: 0;
         z-index: 1;
         width: 100%;
-        font-family: 'Oswald';
         align-content: center;
-    }
-
-    #hiddenLinks {
-        display: none;
-    }
-
-    #hiddenLinks .menu-button {
-        grid: 1fr / 1fr;
-        text-align: center;
-        cursor: pointer;
-        font-size: 1.5rem;
-        font-weight: bold;
-        padding: 20px;
-        color: #F5F5F5;
-        display: block;
-        background-color: #2a2a2a;
-        border-right: none;
-        border-bottom: 2px solid #161616;
     }
 
     #top-bar {
@@ -312,6 +296,24 @@ nav .menu-button:hover {
         text-align: right;
     }
 
+    #hiddenLinks {
+        display: none;
+    }
+
+    #hiddenLinks .menu-button {
+        grid: 1fr / 1fr;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 20px;
+        color: #f5f5f5;
+        display: block;
+        background-color: #2a2a2a;
+        border-right: none;
+        border-bottom: 2px solid #161616;
+    }
+
 }
 
 /* Sections - General */
@@ -319,7 +321,7 @@ nav .menu-button:hover {
 #section1, #section2, #section3, #section4 {
     grid: 1fr / 1fr;
     display: none;
-    color: #F5F5F5; 
+    color: #f5f5f5; 
 }
 
 article, .overlay {
@@ -500,6 +502,7 @@ article, .overlay {
         margin-left: 20px;
         margin-top: 30px;
     }
+
 }
 
 /* Section 3 - Overlays */
@@ -535,14 +538,15 @@ article, .overlay {
 }
 
 .overlay i:hover {
-    opacity: 1;
     color: #ff4000;
 }
 
 @media only screen and (max-device-width : 1200px) {
+
     .overlay {
         grid-template: auto auto / 1fr;
     }
+
 }
 
 /* Section 4 - Contact */
@@ -562,12 +566,14 @@ article, .overlay {
 }
 
 @media only screen and (max-device-width : 1200px) {
+
     #article4 {
         grid-template: auto auto / 1fr;
     }
+
 }
 
-/* Section 4 - Form */
+/* Section 4 - Contact form */
 
 form {
     padding-left: 80px;
@@ -596,16 +602,6 @@ form {
     border: 1px solid white;
 }
 
-label {
-    height: auto;
-    color: #f5f5f5;
-}
-
-textarea {
-    height: auto;
-    color: #161616;
-}
-
 .form-button {
     width: 50%;
     color: #f5f5f5;
@@ -632,7 +628,13 @@ textarea {
     border: 1px solid #ff4000;
 }
 
-.form-control, label, textarea, .form-button {
+.form-control, textarea {
+    color: #161616;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-button, label {
+    color: #f5f5f5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -647,6 +649,7 @@ textarea {
     .form-button {
         width: 100%;
     }
+
 }
 
 /* Footer */
@@ -656,7 +659,7 @@ footer {
     display: grid;
     grid-template: 1fr / 1fr 1fr;
     background-color: #2a2a2a;
-    color: #F5F5F5;
+    color: #f5f5f5;
     font-size: 2rem;
     border-top: 2px solid black;
     padding: 0px 35px;
@@ -688,7 +691,7 @@ footer i, .img-logo, #copyright {
 }
 
 .link {
-    color: #F5F5F5;
+    color: #f5f5f5;
     transition-duration: 0.5s;
 }
 
@@ -701,7 +704,7 @@ footer i, .img-logo, #copyright {
     font-family: 'Oswald';
     font-weight: lighter;
     letter-spacing: 0.1rem;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
 }
 
 @media only screen and (max-device-width : 1200px) {
@@ -723,4 +726,5 @@ footer i, .img-logo, #copyright {
         width: 100%;
         text-align: center;
     }
+
 }
