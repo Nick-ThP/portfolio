@@ -654,7 +654,7 @@ textarea {
 footer {
     grid: 1fr / 1fr;
     display: grid;
-    grid-template: 1fr / 60% auto;
+    grid-template: 1fr / 1fr 1fr;
     background-color: #2a2a2a;
     color: #F5F5F5;
     font-size: 2rem;
@@ -701,7 +701,7 @@ footer i, .img-logo, #copyright {
     font-family: 'Oswald';
     font-weight: lighter;
     letter-spacing: 0.1rem;
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 @media only screen and (max-device-width : 1200px) {
