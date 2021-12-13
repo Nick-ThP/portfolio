@@ -338,11 +338,7 @@ article, .overlay {
         gap: 30px;
     }
 
-    article:last-child, .overlay:last-child {
-        margin-bottom: 15px;
-    }
-
-    .force-margin {
+    article:last-child, .overlay:last-child, .force-margin {
         margin-bottom: 15px;
     }
 
@@ -628,7 +624,7 @@ form {
 }
 
 .form-button:active {
-    color: #161616;
+    color: #f5f5f5;
     background-color: #ff4000;;
     border: 1px solid #ff4000;
 }
