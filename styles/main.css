@@ -502,6 +502,7 @@ article, .overlay {
 
     #mobile-heading {
         display: block;
+        grid: 1fr / 1fr;
     }
 
 }
