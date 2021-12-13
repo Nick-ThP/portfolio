@@ -334,12 +334,16 @@ article, .overlay {
 @media only screen and (max-device-width : 1200px) {
 
     article, .overlay {
-        padding: 30px 20px 30px 20px;
+        padding: 30px 30px 30px 30px;
         gap: 30px;
     }
 
     article:last-child, .overlay:last-child {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    .force-margin {
+        margin-bottom: 15px;
     }
 
 }
@@ -348,6 +352,7 @@ article, .overlay {
 
 #article1 { 
     grid-template: 1fr / repeat(3, 1fr);
+    gap: 30px;
 }
 
 .article1-column {
@@ -359,16 +364,19 @@ article, .overlay {
     width: 75%;
     max-width: 400px;
     height: auto;
-    border: 2px solid black;
     border-radius: 50%;
     background-color: #2a2a2a;
-    box-shadow: 0 0 10px 0 black;
+    margin-top: 50px;
 }
 
 @media only screen and (max-device-width : 1200px) {
 
     #article1 { 
         grid-template: repeat(3, auto) / 1fr;
+    }
+
+    #intro-picture {
+        margin-top: 10px;
     }
 
 }
@@ -386,7 +394,6 @@ article, .overlay {
 #education {
     background-color: #2a2a2a;
     padding: 20px;
-    box-shadow: 0 0 10px 0 black;
 }
 
 #education h3 {
@@ -484,7 +491,7 @@ article, .overlay {
 }
 
 .whitespace {
-    height: 190px;
+    height: 185px;
 }
 
 #mobile-heading {
@@ -499,8 +506,6 @@ article, .overlay {
 
     #mobile-heading {
         display: block;
-        margin-left: 20px;
-        margin-top: 30px;
     }
 
 }
@@ -578,7 +583,7 @@ article, .overlay {
 form {
     padding-left: 80px;
     margin-left: 100px;
-    border-left: 1px solid white;
+    border-left: 1px solid #f5f5f5;
 }
 
 .form-group {
@@ -644,6 +649,12 @@ form {
         padding-left: 0;
         margin-left: 0;
         border-left: none;
+        margin-bottom: 0;
+    }
+
+    .form-group:last-child {
+        margin-bottom: 0px;
+        width: 100%;
     }
 
     .form-button {
@@ -657,7 +668,7 @@ form {
 footer {
     grid: 1fr / 1fr;
     display: grid;
-    grid-template: 1fr / 1fr 1fr;
+    grid-template: 1fr / 65% auto;
     background-color: #2a2a2a;
     color: #f5f5f5;
     font-size: 2rem;

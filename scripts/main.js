@@ -100,6 +100,7 @@ const off = (a, b) => {
 
 const allOff = () => {
 	document.getElementById('overlay1').style.display = "none";
+	/* Add more projects */
 	document.getElementById('article3').style.display = "grid";
 }
 
