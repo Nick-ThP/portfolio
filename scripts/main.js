@@ -121,3 +121,11 @@ const closeAfter = () => {
 	let a = document.getElementById('hiddenLinks');
 	a.style.display = "none";
 }
+
+/* Fade-in on main content */
+
+window.onscroll = () => {
+	if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
+		document.getElementById('main-content').classList.add('fade-in');
+	}
+};
