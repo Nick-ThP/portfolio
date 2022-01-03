@@ -6,6 +6,14 @@
     padding: 0;
 }
 
+/* Variables */
+
+:root {
+    --interface-dark-gray: #161616;
+    --interface-light-gray: #2a2a2a;
+    --interface-accent-color: #ff4000; 
+}
+
 /* Fonts */
 
 @font-face {
@@ -36,7 +44,7 @@
 /* General settings*/
 
 html {
-    background: linear-gradient(to bottom, #ff4000 0%, #686868 100%) fixed;
+    background: linear-gradient(to bottom, var(--interface-accent-color) 0%, #686868 100%) fixed;
     scroll-behavior: smooth;
 }
 
@@ -181,7 +189,7 @@ header {
     grid-template: 12.5% 75% 12.5% / 1fr;
     width: 1400px;
     height: 650px;
-    background-color: #161616;
+    background-color: var(--interface-dark-gray);
     box-shadow:
     6px 6px 10px   black, 
     5.75px 5.75px  black, 
@@ -268,11 +276,11 @@ nav .menu-button {
 }
 
 nav .menu-button:hover {
-    color: #ff4000;
+    color: var(--interface-accent-color);
 }
 
 #button1, #button2, #button3 {
-    border-right: 2px solid #161616;
+    border-right: 2px solid var(--interface-dark-gray);
 }
 
 #burger-nav {
@@ -332,9 +340,9 @@ nav .menu-button:hover {
         padding: 20px;
         color: #f5f5f5;
         display: block;
-        background-color: #2a2a2a;
+        background-color: var(--interface-light-gray);
         border-right: none;
-        border-bottom: 2px solid #161616;
+        border-bottom: 2px solid var(--interface-dark-gray);
     }
 
 }
@@ -384,7 +392,7 @@ article, .overlay {
     max-width: 400px;
     height: auto;
     border-radius: 50%;
-    background-color: #2a2a2a;
+    background-color: var(--interface-light-gray);
     margin-top: 50px;
 }
 
@@ -411,7 +419,7 @@ article, .overlay {
 }
 
 #education {
-    background-color: #2a2a2a;
+    background-color: var(--interface-light-gray);
     padding: 20px;
 }
 
@@ -436,7 +444,7 @@ article, .overlay {
 
 .article3-column {
     grid: 1fr / 1fr;
-    background-color: #2a2a2a;
+    background-color: var(--interface-light-gray);
     cursor: pointer;
     background-image: url(../images/forside-helse.png);
     background-repeat: no-repeat;
@@ -471,30 +479,30 @@ article, .overlay {
 
 .article3-column:hover {
     box-shadow:
-    6px 6px 10px   #ff4000, 
-    5.75px 5.75px  #ff4000, 
-    5.5px 5.5px    #ff4000, 
-    5.25px 5.25px  #ff4000, 
-    5px 5px        #ff4000, 
-    4.75px 4.75px  #ff4000,
-    4.5px 4.5px    #ff4000, 
-    4.25px 4.25px  #ff4000,
-    4px 4px        #ff4000,
-    3.75px 3.75px  #ff4000,
-    3.5px 3.5px    #ff4000,
-    3.25px 3.25px  #ff4000,
-    3px 3px        #ff4000,
-    2.75px 2.75px  #ff4000,
-    2.5px 2.5px    #ff4000,
-    2.25px 2.25px  #ff4000,
-    2px 2px        #ff4000,
-    1.75px 1.75px  #ff4000,
-    1.5px 1.5px    #ff4000,
-    1.25px 1.25px  #ff4000,
-    1px 1px        #ff4000,
-    0.75px 0.75px  #ff4000,
-    0.5px 0.5px    #ff4000,
-    0.25px 0.25px  #ff4000;
+    6px 6px 10px   var(--interface-accent-color), 
+    5.75px 5.75px  var(--interface-accent-color), 
+    5.5px 5.5px    var(--interface-accent-color), 
+    5.25px 5.25px  var(--interface-accent-color), 
+    5px 5px        var(--interface-accent-color), 
+    4.75px 4.75px  var(--interface-accent-color),
+    4.5px 4.5px    var(--interface-accent-color), 
+    4.25px 4.25px  var(--interface-accent-color),
+    4px 4px        var(--interface-accent-color),
+    3.75px 3.75px  var(--interface-accent-color),
+    3.5px 3.5px    var(--interface-accent-color),
+    3.25px 3.25px  var(--interface-accent-color),
+    3px 3px        var(--interface-accent-color),
+    2.75px 2.75px  var(--interface-accent-color),
+    2.5px 2.5px    var(--interface-accent-color),
+    2.25px 2.25px  var(--interface-accent-color),
+    2px 2px        var(--interface-accent-color),
+    1.75px 1.75px  var(--interface-accent-color),
+    1.5px 1.5px    var(--interface-accent-color),
+    1.25px 1.25px  var(--interface-accent-color),
+    1px 1px        var(--interface-accent-color),
+    0.75px 0.75px  var(--interface-accent-color),
+    0.5px 0.5px    var(--interface-accent-color),
+    0.25px 0.25px  var(--interface-accent-color);
 }
 
 .article3-column:active {
@@ -563,7 +571,7 @@ article, .overlay {
 }
 
 .overlay i:hover {
-    color: #ff4000;
+    color: var(--interface-accent-color);
 }
 
 @media only screen and (max-device-width : 1200px) {
@@ -622,7 +630,7 @@ form {
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: #161616;
+    color: var(--interface-dark-gray);
     background-color: white;  
     border: 1px solid white;
 }
@@ -642,19 +650,19 @@ form {
 }
     
 .form-button:hover {
-    color: #ff4000;
+    color: var(--interface-accent-color);
     background-color: transparent;
-    border: 1px solid #ff4000;
+    border: 1px solid var(--interface-accent-color);
 }
 
 .form-button:active {
     color: #f5f5f5;
-    background-color: #ff4000;;
-    border: 1px solid #ff4000;
+    background-color: var(--interface-accent-color);;
+    border: 1px solid var(--interface-accent-color);
 }
 
 .form-control, textarea {
-    color: #161616;
+    color: var(--interface-dark-gray);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -689,7 +697,7 @@ footer {
     grid: 1fr / 1fr;
     display: grid;
     grid-template: 1fr / 65% auto;
-    background-color: #2a2a2a;
+    background-color: var(--interface-light-gray);
     color: #f5f5f5;
     font-size: 2rem;
     border-top: 2px solid black;
@@ -728,7 +736,7 @@ footer i, .img-logo, #copyright {
 
 .link:hover {
     opacity: 1;
-    color: #ff4000;
+    color: var(--interface-accent-color);
 }
 
 #copyright {
