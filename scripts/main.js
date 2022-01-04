@@ -29,20 +29,20 @@ const fadeOutOnScroll = element => {
 		element.style.visibility = 'visible';
 	}	
 
-}
+};
 
 /* Execution of fade script*/
 
 const scrollHandler = () => {
 	fadeOutOnScroll(header);
-}
+};
 
 window.addEventListener('scroll', scrollHandler);
 
 /* Toggle script */
 
 const sectionArray = ["section1", "section2", "section3", "section4"];
-const buttonArray = ["button1", "button2", "button3", "button4"]
+const buttonArray = ["button1", "button2", "button3", "button4"];
 
 let visibleA = null;
 let visibleB = null;
@@ -58,7 +58,7 @@ const show = (a, b) => {
     	visibleB = b;
     } 
 	hide();
-}
+};
 
 const hide = () => {
     for(let i = 0; i < sectionArray.length; i++) {
@@ -76,13 +76,13 @@ const hide = () => {
 			button.style.backgroundColor = "var(--interface-light-gray";
         }
     }	
-}
+};
 
 /* Execution of toggle script */
 
 const toggleHandler = () => {
 	show('section1', 'button1');
-}
+};
 
 window.addEventListener("DOMContentLoaded", toggleHandler);
 
@@ -91,18 +91,18 @@ window.addEventListener("DOMContentLoaded", toggleHandler);
 const on = (a, b) => {
 	document.getElementById(a).style.display = "grid";
 	document.getElementById(b).style.display = "none";
-}
+};
 
 const off = (a, b) => {
 	document.getElementById(a).style.display = "none";
 	document.getElementById(b).style.display = "grid";
-}
+};
 
 const allOff = () => {
 	document.getElementById('overlay1').style.display = "none";
 	/* Add more projects */
 	document.getElementById('article3').style.display = "grid";
-}
+};
 
 document.getElementById('button3').addEventListener('click', allOff);
 
@@ -115,12 +115,12 @@ const toggleBurger = () => {
 	} else {
 	  a.style.display = "block";
 	}
-}
+};
 
 const closeAfter = () => {
 	let a = document.getElementById('hiddenLinks');
 	a.style.display = "none";
-}
+};
 
 /* Fade-in on main content */
 
@@ -133,10 +133,10 @@ window.onscroll = () => {
 /* Secret sauce */
 
 const getRandomNumber = () => {
-	return Math.floor(Math.random() * 255)
+	return Math.floor(Math.random() * 255);
 };
 
 document.getElementById('secret-sauce').addEventListener('click', () => {
 	document.documentElement.style.setProperty
-	('--interface-accent-color', `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`);
+	('--interface-accent-color', `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`)
 });

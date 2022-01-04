@@ -732,7 +732,6 @@ footer i, .img-logo, #copyright {
 .link {
     color: #f5f5f5;
     transition-duration: 0.3s;
-    cursor: pointer;
 }
 
 .link:hover {
