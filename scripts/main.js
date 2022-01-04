@@ -70,10 +70,10 @@ const hide = () => {
 
         if (visibleA === a && visibleB === b) {
         	section.style.display = "block";
-			button.style.backgroundColor = "#161616";
+			button.style.backgroundColor = "var(--interface-dark-gray";
         } else {
             section.style.display = "none";
-			button.style.backgroundColor = "#2a2a2a";
+			button.style.backgroundColor = "var(--interface-light-gray";
         }
     }	
 }
@@ -139,4 +139,8 @@ const getRandomNumber = () => {
 document.getElementById('secret-sauce').addEventListener('click', () => {
 	document.documentElement.style.setProperty
 	('--interface-accent-color', `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`)
+	document.documentElement.style.setProperty
+	('--interface-dark-gray', `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`)
+	document.documentElement.style.setProperty
+	('--interface-light-gray', `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`)
 });
