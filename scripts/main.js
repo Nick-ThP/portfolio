@@ -129,3 +129,14 @@ window.onscroll = () => {
 		document.getElementById('main-content').classList.add('fade-in');
 	}
 };
+
+/* Secret sauce */
+
+const getRandomNumber = () => {
+	return Math.floor(Math.random() * 255)
+};
+
+document.getElementById('secret-sauce').addEventListener('click', () => {
+	document.documentElement.style.setProperty
+	('--interface-accent-color', `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`)
+});
