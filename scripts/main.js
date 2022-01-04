@@ -138,9 +138,5 @@ const getRandomNumber = () => {
 
 document.getElementById('secret-sauce').addEventListener('click', () => {
 	document.documentElement.style.setProperty
-	('--interface-accent-color', `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`)
-	document.documentElement.style.setProperty
-	('--interface-dark-gray', `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`)
-	document.documentElement.style.setProperty
-	('--interface-light-gray', `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`)
+	('--interface-accent-color', `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`);
 });
