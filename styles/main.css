@@ -165,7 +165,7 @@ header {
     }
 }
 
-@media only screen and (max-device-width : 1200px) {
+@media only screen and (max-width: 1200px) {
 
     header {
         display: none;
@@ -238,7 +238,7 @@ header {
     }
 }
 
-@media only screen and (max-device-width : 1200px) {
+@media only screen and (max-width: 1200px) {
 
     #wrapper {
         height: auto;
@@ -287,7 +287,7 @@ nav .menu-button:hover {
     display: none;
 }
 
-@media only screen and (max-device-width : 1200px) {
+@media only screen and (max-width: 1200px) {
 
     nav {
         display: none;   
@@ -362,7 +362,7 @@ article, .overlay {
     text-align: justify;
 }
 
-@media only screen and (max-device-width : 1200px) {
+@media only screen and (max-width: 1200px) {
 
     article, .overlay {
         padding: 30px 30px 30px 30px;
@@ -396,7 +396,7 @@ article, .overlay {
     margin-top: 50px;
 }
 
-@media only screen and (max-device-width : 1200px) {
+@media only screen and (max-width: 1200px) {
 
     #article1 { 
         grid-template: repeat(3, auto) / 1fr;
@@ -428,7 +428,7 @@ article, .overlay {
 }
 
 
-@media only screen and (max-device-width : 1200px) {
+@media only screen and (max-width: 1200px) {
 
     #article2 { 
         grid-template: repeat(3, auto) / 1fr;
@@ -525,7 +525,7 @@ article, .overlay {
     display: none;
 }
 
-@media only screen and (max-device-width : 1200px) {
+@media only screen and (max-width: 1200px) {
     
     #article3 {
         grid-template: repeat(5, auto) / 1fr;
@@ -574,7 +574,7 @@ article, .overlay {
     color: var(--interface-accent-color);
 }
 
-@media only screen and (max-device-width : 1200px) {
+@media only screen and (max-width: 1200px) {
 
     .overlay {
         grid-template: auto auto / 1fr;
@@ -598,7 +598,7 @@ article, .overlay {
     letter-spacing: 0.1rem;
 }
 
-@media only screen and (max-device-width : 1200px) {
+@media only screen and (max-width: 1200px) {
 
     #article4 {
         grid-template: auto auto / 1fr;
@@ -671,7 +671,7 @@ form {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@media only screen and (max-device-width : 1200px) {
+@media only screen and (max-width: 1200px) {
 
     form {
         padding-left: 0;
@@ -729,6 +729,10 @@ footer i, .img-logo, #copyright {
     height: 1.8rem;
 }
 
+#secret-sauce {
+    cursor: pointer;
+}
+
 .link {
     color: #f5f5f5;
     transition-duration: 0.3s;
@@ -746,7 +750,7 @@ footer i, .img-logo, #copyright {
     font-size: 0.75rem;
 }
 
-@media only screen and (max-device-width : 1200px) {
+@media only screen and (max-width: 1200px) {
 
     footer {
         grid-template: auto auto / 1fr;
