@@ -131,7 +131,7 @@ header {
 #nicklas {
     position: fixed;
     bottom: 0;
-    right: 30px;
+    right: 200px;
     height: 600px;
     width: auto;
 }
@@ -729,7 +729,7 @@ footer i, .img-logo, #copyright {
     height: 1.8rem;
 }
 
-#secret-sauce {
+#change-color {
     cursor: pointer;
 }
 
