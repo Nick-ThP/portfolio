@@ -130,7 +130,7 @@ window.onscroll = () => {
 	}
 };
 
-/* Secret sauce */
+/* Change color */
 
 const getRandomNumber = () => {
 	return Math.floor(Math.random() * 255);
