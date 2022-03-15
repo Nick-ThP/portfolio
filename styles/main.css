@@ -365,7 +365,7 @@ article, .overlay {
 @media only screen and (max-width: 1200px) {
 
     article, .overlay {
-        padding: 30px 30px 30px 30px;
+        padding: 50px 30px 30px 30px;
         gap: 30px;
     }
 
@@ -443,11 +443,15 @@ article, .overlay {
 
 .article3-column {
     grid: 1fr / 1fr;
-    background: var(--interface-light-gray);
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    height: 390px;
+    transition: 0.5s ease;
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
-    text-shadow: 3px 3px 6px black;
+    background-position: center;
     box-shadow:
     6px 6px 10px   black, 
     5.75px 5.75px  black, 
@@ -507,20 +511,13 @@ article, .overlay {
     box-shadow: none;
 }
 
-.article3-column h2 {
-    padding: 20px 20px 0px 20px;
+.text-gradient {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
 }
 
-.article3-column p {
-    padding: 0px 20px 20px 20px;
-}
-
-.article3-column:hover h2, .article3-column:hover p {
-    opacity: 0;
-}
-
-.whitespace {
-    height: 185px;
+.text-gradient h2 {
+    padding: 100px 20px 20px 20px;
+    text-shadow: 3px 3px 6px black;
 }
 
 #mobile-heading {
@@ -530,25 +527,29 @@ article, .overlay {
 /* Section 3 - Project pictures */
 
 .a3c1 {
-    background-image: url(../images/forside-links.png);
+    background-image: url(../images/notebook-projects.png);
 }
 
 .a3c2 {
-    background-image: url(../images/forside-briller.png);
+    background-image: url(../images/notebook-projects.png);
 }
 
 .a3c3 {
-    background-image: url(../images/forside-helse.png);
+    background-image: url(../images/notebook-projects.png);
 }
 
 .a3c4 {
-    background-image: url(../images/notebook.png);
+    background-image: url(../images/notebook-projects.png);
 }
 
 @media only screen and (max-width: 1200px) {
     
     #article3 {
         grid-template: repeat(5, auto) / 1fr;
+    }
+
+    .article3-column {
+        box-shadow: none;
     }
 
     #mobile-heading {
