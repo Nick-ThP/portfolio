@@ -445,7 +445,6 @@ article, .overlay {
     grid: 1fr / 1fr;
     background-color: var(--interface-light-gray);
     cursor: pointer;
-    background-image: url(../images/forside-helse.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-shadow: 3px 3px 6px black;
@@ -520,8 +519,30 @@ article, .overlay {
     height: 185px;
 }
 
+.transparent-overlay {
+    box-shadow: inset 0px 0px 0 2000px rgba(0,0,0,0.5);
+}
+
 #mobile-heading {
     display: none;
+}
+
+/* Section 3 - Project Pictures */
+
+.a3c1 {
+    background-image: url(../images/forside-links.png);
+}
+
+.a3c2 {
+    background-image: url(../images/forside-briller.png);
+}
+
+.a3c3 {
+    background-image: url(../images/forside-helse.png);
+}
+
+.a3c4 {
+    background-image: url(../images/notebook.png);
 }
 
 @media only screen and (max-width: 1200px) {
