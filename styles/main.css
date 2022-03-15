@@ -443,7 +443,7 @@ article, .overlay {
 
 .article3-column {
     grid: 1fr / 1fr;
-    background-color: var(--interface-light-gray);
+    background: var(--interface-light-gray);
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
@@ -515,19 +515,19 @@ article, .overlay {
     padding: 0px 20px 20px 20px;
 }
 
-.whitespace {
-    height: 185px;
+.article3-column:hover h2, .article3-column:hover p {
+    opacity: 0;
 }
 
-.transparent-overlay {
-    box-shadow: inset 0px 0px 0 2000px rgba(0,0,0,0.5);
+.whitespace {
+    height: 185px;
 }
 
 #mobile-heading {
     display: none;
 }
 
-/* Section 3 - Project Pictures */
+/* Section 3 - Project pictures */
 
 .a3c1 {
     background-image: url(../images/forside-links.png);
