@@ -30,7 +30,6 @@
     url(../fonts/Oswald-Bold.woff) format('woff'),
     url(../fonts/Oswald-Bold.woff2) format('woff2');
     font-weight: bold;
-
 }
 
 @font-face {
@@ -48,12 +47,12 @@ html {
     scroll-behavior: smooth;
 }
 
-/* body {
+body {
     background-image: url(../images/texture.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-} */
+    background-size: auto;
+}
  
 h1, h2, h3, h4, h5, h6, li {
     font-family: 'Oswald'; 
@@ -595,10 +594,50 @@ article, .overlay {
     color: var(--interface-accent-color);
 }
 
+.project-buttons {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.project-button {
+    color: #f5f5f5;
+    background-color: transparent;
+    border: 1px solid #f5f5f5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem;
+    transition-duration: 0.3s;
+    color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+    
+.project-button:hover {
+    color: var(--interface-accent-color);
+    background-color: transparent;
+    border: 1px solid var(--interface-accent-color);
+}
+
+.project-button:active {
+    color: #f5f5f5;
+    background-color: var(--interface-accent-color);
+    border: 1px solid var(--interface-accent-color);
+}
+
 @media only screen and (max-width: 1200px) {
 
     .overlay {
         grid-template: auto auto / 1fr;
+    }
+
+    .project-button {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
 }
@@ -657,8 +696,6 @@ form {
 }
 
 .form-button {
-    width: 50%;
-    color: #f5f5f5;
     background-color: transparent;
     border: 1px solid #f5f5f5;
     text-align: center;
@@ -775,6 +812,7 @@ footer i, .img-logo, #copyright {
 
     footer {
         grid-template: auto auto / 1fr;
+        padding: 20px;
     }
 
     #left-footer, #right-footer {

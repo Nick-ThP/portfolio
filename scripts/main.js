@@ -69,7 +69,7 @@ const hide = () => {
 		let button = document.getElementById(b);
 
         if (visibleA === a && visibleB === b) {
-        	section.style.display = "block";
+			section.style.display = "block";
 			button.style.backgroundColor = "var(--interface-dark-gray";
         } else {
             section.style.display = "none";
