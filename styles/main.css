@@ -425,6 +425,10 @@ article, .overlay {
     font-weight: lighter;
 }
 
+#education a, #education a:visited {
+    color: skyblue;
+}
+
 
 @media only screen and (max-width: 1200px) {
 
