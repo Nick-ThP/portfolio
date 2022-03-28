@@ -1,3 +1,9 @@
+<?php
+
+include_once './scripts/contact.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -230,7 +236,7 @@
                         <h3 class="contact-info"><strong>Phone:</strong> (+45) 21 61 81 60</h3>
                     </div>
                     <div class="article4-column">
-                        <form method="post" action="./scripts/contact.php">
+                        <form method="POST" action="./scripts/contact.php">
                             <div class="form-group">
                                 <label for="Name" class="label">Name</label>
                                 <div class="input-group">
