@@ -678,6 +678,10 @@ form {
     border-left: 1px solid #f5f5f5;
 }
 
+textarea {
+    resize: none;
+}
+
 .form-group {
     margin-bottom: 1.5rem;
 }
