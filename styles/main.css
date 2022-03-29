@@ -508,6 +508,7 @@ article, .overlay {
     0.75px 0.75px  var(--interface-accent-color),
     0.5px 0.5px    var(--interface-accent-color),
     0.25px 0.25px  var(--interface-accent-color);
+    font-size: 1.2rem;
 }
 
 .article3-column:active {
@@ -534,7 +535,7 @@ article, .overlay {
 }
 
 .a3c2 {
-    background-image: url(../images/notebook-projects.png);
+    background-image: url(../images/movie-database-projects.png);
 }
 
 .a3c3 {
@@ -588,7 +589,7 @@ article, .overlay {
 
 .overlay i {
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 3.2rem;
     opacity: 1;
     color: #f5f5f5;
     transition-duration: 0.3s;
@@ -596,6 +597,7 @@ article, .overlay {
 
 .overlay i:hover {
     color: var(--interface-accent-color);
+    transform: scale(1.2);
 }
 
 .project-buttons {
@@ -805,6 +807,7 @@ footer i, .img-logo, #copyright {
 }
 
 .link:hover {
+    transform: scale(1.05);
     opacity: 1;
     color: var(--interface-accent-color);
 }
