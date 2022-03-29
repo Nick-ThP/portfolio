@@ -416,9 +416,17 @@ article, .overlay {
     grid: 1fr / 1fr;
 }
 
+.extra-top-margin {
+    margin-top: 54.5px;
+}
+
+.extra-top-margin h3 {
+    margin-bottom: 14.5px;
+}
+
 #education {
     background-color: var(--interface-light-gray);
-    padding: 20px;
+    padding: 24px;
 }
 
 #education h3 {
