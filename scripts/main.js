@@ -136,10 +136,10 @@ window.onscroll = () => {
 /* Change color */
 
 const getRandomNumber = () => {
-	return Math.floor(Math.random() * 255);
+	return Math.floor(Math.random() * 360);
 };
 
 document.getElementById('change-color').addEventListener('click', () => {
 	document.documentElement.style.setProperty
-	('--interface-accent-color', `rgb(${getRandomNumber()}, ${getRandomNumber()}, ${getRandomNumber()})`)
+	('--interface-accent-color', `hsl(${getRandomNumber()}, 100%, 50%)`)
 });
