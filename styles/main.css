@@ -390,7 +390,8 @@ article, .overlay {
     max-width: 400px;
     height: auto;
     border-radius: 50%;
-    background-color: var(--interface-light-gray);
+    background-color: var(--interface-accent-color);
+    padding: 2px;
     margin-top: 50px;
 }
 
@@ -434,7 +435,7 @@ article, .overlay {
 }
 
 #education a, #education a:visited {
-    color: skyblue;
+    color: var(--interface-accent-color);
 }
 
 
