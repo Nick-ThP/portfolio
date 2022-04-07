@@ -102,7 +102,6 @@ const allOff = () => {
 	document.getElementById('overlay1').style.display = "none";
 	document.getElementById('overlay2').style.display = "none";
 	document.getElementById('overlay3').style.display = "none";
-	
 	document.getElementById('article3').style.display = "grid";
 };
 

@@ -454,7 +454,7 @@ article, .overlay {
 /* Section 3 - Projects */
 
 #article3 {   
-    grid-template: 1fr / repeat(4, 1fr);
+    grid-template: 1fr / repeat(3, 1fr);
 }
 
 .article3-column {
@@ -558,7 +558,7 @@ article, .overlay {
 @media only screen and (max-width: 1200px) {
     
     #article3 {
-        grid-template: repeat(5, auto) / 1fr;
+        grid-template: repeat(3, auto) / 1fr;
     }
 
     .article3-column {
