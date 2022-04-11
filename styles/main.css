@@ -550,18 +550,22 @@ article, .overlay {
 
 .a3c1 {
     background-image: url(../images/movie-database-projects.png);
+    background-position-y: top;
 }
 
 .a3c2 {
     background-image: url(../images/mern-goal-projects.png);
+    background-position-y: top;
 }
 
 .a3c3 {
     background-image: url(../images/expense-tracker-projects.png);
+    background-position-y: top;
 }
 
 .a3c4 {
     background-image: url(../images/note-keeper-projects.png);
+    background-position-y: top;
 }
 
 @media only screen and (max-width: 1200px) {
