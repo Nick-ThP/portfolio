@@ -529,7 +529,7 @@ article, .overlay {
 }
 
 .text-gradient {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
 }
 
 .text-gradient h2 {
@@ -552,11 +552,11 @@ article, .overlay {
 }
 
 .a3c3 {
-    background-image: url(../images/notebook-projects.png);
+    background-image: url(../images/expense-tracker-projects.png);
 }
 
 .a3c4 {
-    background-image: url(../images/notebook-projects.png);
+    background-image: url(../images/note-keeper-projects.png);
 }
 
 @media only screen and (max-width: 1200px) {
