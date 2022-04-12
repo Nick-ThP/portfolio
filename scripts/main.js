@@ -142,3 +142,18 @@ document.getElementById('change-color').addEventListener('click', () => {
 	document.documentElement.style.setProperty
 	('--interface-accent-color', `hsl(${getRandomNumber()}, 100%, 50%)`)
 });
+
+/* Spin */
+
+const introPic = document.getElementById('intro-picture')
+
+introPic.addEventListener("click", function(e) {
+	e.preventDefault;
+	introPic.classList.remove("spin-class");
+	void introPic.offsetWidth;
+	introPic.classList.add("spin-class");
+  }, false);
+
+const forceToNotSpin = () => {
+	introPic.classList.remove("spin-class");
+}
