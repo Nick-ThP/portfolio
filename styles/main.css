@@ -659,7 +659,6 @@ article, .overlay {
     display: flex;
     justify-content: start;
     align-content: center;
-    flex-wrap: wrap;
     gap: 2%;
 }
 
@@ -695,7 +694,12 @@ article, .overlay {
         grid-template: auto auto / 1fr;
     }
 
+    .project-buttons {
+        flex-direction: column;
+    }
+
     .project-button {
+        width: 100%;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -805,6 +809,11 @@ textarea {
     .form-group:last-child {
         margin-bottom: 0px;
         width: 100%;
+    }
+
+    .form-button {
+        width: 100%;
+        margin-top: 2%;
     }
 
 }
