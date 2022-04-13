@@ -696,7 +696,6 @@ article, .overlay {
     }
 
     .project-button {
-        width: 100%;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -805,10 +804,6 @@ textarea {
 
     .form-group:last-child {
         margin-bottom: 0px;
-        width: 100%;
-    }
-
-    .form-button {
         width: 100%;
     }
 
