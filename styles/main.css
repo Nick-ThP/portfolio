@@ -840,6 +840,7 @@ footer i, .img-logo, #copyright {
     justify-content: start;
     align-items: center;
     display: flex;
+    opacity: 0.5;
     gap: 2rem;
 }
 
