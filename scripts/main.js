@@ -58,6 +58,8 @@ const show = (a, b) => {
     	visibleB = b;
     } 
 	hide();
+
+	toTop();
 };
 
 const hide = () => {
@@ -76,6 +78,8 @@ const hide = () => {
 			button.style.backgroundColor = "var(--interface-light-gray";
         }
     }	
+
+	toTop();
 };
 
 /* Execution of toggle script */
@@ -91,11 +95,15 @@ window.addEventListener("DOMContentLoaded", toggleHandler);
 const on = (a, b) => {
 	document.getElementById(a).style.display = "grid";
 	document.getElementById(b).style.display = "none";
+
+	toTop();
 };
 
 const off = (a, b) => {
 	document.getElementById(a).style.display = "none";
 	document.getElementById(b).style.display = "grid";
+
+	toTop();
 };
 
 const allOff = () => {
@@ -104,6 +112,8 @@ const allOff = () => {
 	document.getElementById('overlay3').style.display = "none";
 	document.getElementById('overlay4').style.display = "none";
 	document.getElementById('article3').style.display = "grid";
+	
+	toTop();
 };
 
 document.getElementById('button3').addEventListener('click', allOff);
@@ -156,4 +166,14 @@ introPic.addEventListener("click", function(e) {
 
 const forceToNotSpin = () => {
 	introPic.classList.remove("spin-class");
+}
+
+/* To top (mobile) */
+
+const toTop = () => {
+	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		window.scroll(0, 0);
+	} else {
+		null;
+	}
 }
