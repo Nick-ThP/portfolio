@@ -75,7 +75,7 @@ p {
 header {
     width: 100%;
     height: 100vh;
-    margin-bottom: 2000px;
+    margin-bottom: 1000px;
 }
 
 .heading {
@@ -857,6 +857,13 @@ footer i, .img-logo, #copyright {
     height: 1.8rem;
 }
 
+#copyright {
+    font-family: 'Oswald';
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    font-size: 0.75rem;
+}
+
 #change-color {
     cursor: pointer;
 }
@@ -870,13 +877,6 @@ footer i, .img-logo, #copyright {
     transform: scale(1.05);
     opacity: 1;
     color: var(--interface-accent-color);
-}
-
-#copyright {
-    font-family: 'Oswald';
-    font-weight: lighter;
-    letter-spacing: 0.1rem;
-    font-size: 0.75rem;
 }
 
 @media only screen and (max-width: 1200px) {
