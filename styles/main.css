@@ -368,19 +368,15 @@ article, .overlay {
 @media only screen and (max-width: 1200px) {
 
     article {
-        padding: 50px 30px 30px 30px;
+        padding: 40px 30px 40px 30px;
     }
 
     .overlay {
-        padding: 40px 30px 30px 30px;
+        padding: 30px 30px 40px 30px;
     }
 
     article, .overlay {
         gap: 30px;
-    }
-
-    article:last-child, .overlay:last-child, .force-margin {
-        margin-bottom: 15px;
     }
 
 }
@@ -683,7 +679,7 @@ article, .overlay {
     display: flex;
     justify-content: start;
     align-content: center;
-    gap: 2%;
+    gap: 10px;
 }
 
 .project-button {
@@ -720,12 +716,11 @@ article, .overlay {
 
     .project-buttons {
         flex-direction: column;
+        gap: 20px;
     }
 
     .project-button {
         width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
     }
 
 }
@@ -838,7 +833,6 @@ textarea {
 
     .form-button {
         width: 100%;
-        margin-top: 2%;
     }
 
 }
