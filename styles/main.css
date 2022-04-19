@@ -275,7 +275,7 @@ nav .menu-button {
     cursor: pointer;
     color: #f5f5f5;
     padding: 15px;
-    transition-duration: 0.3s;
+    transition: 0.3s ease;
 }
 
 nav .menu-button:hover {
@@ -497,10 +497,10 @@ article, .overlay {
 .article3-column {
     grid: 1fr / 1fr;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     flex-direction: column;
     height: 390px;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
@@ -655,7 +655,7 @@ article, .overlay {
     font-size: 4.2rem;
     opacity: 1;
     color: #f5f5f5;
-    transition-duration: 0.3s;
+    transition: 0.3s ease;
 }
 
 .overlay i:hover {
@@ -679,7 +679,7 @@ article, .overlay {
     cursor: pointer;
     font-size: 1rem;
     padding: 1rem;
-    transition-duration: 0.3s;
+    transition: 0.3s ease;
     color: #f5f5f5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -779,7 +779,7 @@ textarea {
     cursor: pointer;
     font-size: 1rem;
     padding: 1rem;
-    transition-duration: 0.3s;
+    transition: 0.3s ease;
     margin-top: 1rem;
 }
     
@@ -878,7 +878,7 @@ footer i, .img-logo, #copyright {
 
 .link {
     color: #f5f5f5;
-    transition-duration: 0.3s;
+    transition: 0.3s ease;
 }
 
 .link:hover {
