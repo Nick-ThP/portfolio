@@ -145,7 +145,12 @@ window.onscroll = () => {
 /* Change color */
 
 const getRandomNumber = () => {
-	return Math.floor(Math.random() * 360);
+	const number = Math.floor(Math.random() * 360);
+	if (number >= 210 && number <= 290) {
+		return getRandomNumber()
+	} else {
+		return number;
+	}
 };
 
 document.getElementById('change-color').addEventListener('click', () => {

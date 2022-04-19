@@ -138,7 +138,7 @@ header {
 .arrow-down {
     position: fixed;
     bottom: 40px;
-    left: 100vh;
+    left: 47.5%;
     color: white;
     font-size: 7rem;
     opacity: 1;
@@ -638,6 +638,10 @@ article, .overlay {
     grid-area: 1fr / 1fr;
     display: flex;
     justify-content: center;
+}
+
+.overlay-gallery a {
+    text-align: center;
 }
 
 .overlay-picture {
