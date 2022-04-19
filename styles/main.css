@@ -367,8 +367,15 @@ article, .overlay {
 
 @media only screen and (max-width: 1200px) {
 
-    article, .overlay {
+    article {
         padding: 50px 30px 30px 30px;
+    }
+
+    .overlay {
+        padding: 40px 30px 30px 30px;
+    }
+
+    article, .overlay {
         gap: 30px;
     }
 
