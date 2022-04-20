@@ -1,5 +1,3 @@
-window.scrollTo(0, 0);
-
 /* Fade script */
 
 const header = document.getElementById('header');
@@ -184,3 +182,9 @@ const toTop = () => {
 		null;
 	}
 }
+
+/* To top on refresh */
+
+window.onbeforeunload = () => {
+	window.scrollTo(0, 0);
+  }
