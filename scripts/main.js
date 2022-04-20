@@ -176,7 +176,7 @@ const forceToNotSpin = () => {
 /* To top (mobile) */
 
 const toTop = () => {
-	if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		window.scroll(0, 0);
 	} else {
 		null;
