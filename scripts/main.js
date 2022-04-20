@@ -1,3 +1,19 @@
+/* To top on refresh */
+
+window.onbeforeunload = function() {
+    window.scrollTo(0,0);
+};
+
+/* To top (mobile) */
+
+const toTop = () => {
+	if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		window.scroll(0, 0);
+	} else {
+		null;
+	}
+};
+
 /* Fade script */
 
 const header = document.getElementById('header');
@@ -171,14 +187,4 @@ introPic.addEventListener("click", function(e) {
 
 const forceToNotSpin = () => {
 	introPic.classList.remove("spin-class");
-}
-
-/* To top (mobile) */
-
-const toTop = () => {
-	if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-		window.scroll(0, 0);
-	} else {
-		null;
-	}
-}
+};
