@@ -850,7 +850,7 @@ textarea {
 
 @-moz-document url-prefix() {
 
-    form-button {
+    .form-button {
       margin-top: 0px;
     }
 
