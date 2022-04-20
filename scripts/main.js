@@ -185,6 +185,4 @@ const toTop = () => {
 
 /* To top on refresh */
 
-window.onbeforeunload = () => {
-	window.scrollTo(0, 0);
-  }
+window.scrollTo(0, 0);
