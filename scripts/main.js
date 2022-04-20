@@ -1,3 +1,5 @@
+window.scrollTo(0, 0);
+
 /* Fade script */
 
 const header = document.getElementById('header');
