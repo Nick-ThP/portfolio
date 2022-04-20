@@ -182,7 +182,3 @@ const toTop = () => {
 		null;
 	}
 }
-
-/* To top on refresh */
-
-window.scrollTo(0, 0);
