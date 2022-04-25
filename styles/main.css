@@ -496,6 +496,7 @@ article, .overlay {
 
 #education h3 {
     font-weight: lighter;
+    text-align: left;
 }
 
 #education a, #education a:visited {
@@ -763,6 +764,7 @@ article, .overlay {
     font-weight: lighter;
     letter-spacing: 0.1rem;
     line-height: 1.2rem;
+    text-align: left;
 }
 
 .display-only-mobile {

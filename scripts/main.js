@@ -72,7 +72,7 @@ const show = (a, b) => {
     	visibleB = b;
     } 
 	hide();
-
+	
 	toTop();
 };
 
