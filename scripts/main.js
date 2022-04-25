@@ -150,9 +150,15 @@ const closeAfter = () => {
 
 /* Fade-in on main content */
 
+let initialSpin = false;
+
 window.onscroll = () => {
 	if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
 		document.getElementById('main-content').classList.add('fade-in');
+        if (!initialSpin) {
+			introPic.classList.add("spin-class");
+            initialSpin = true;
+		}
 	}
 };
 
