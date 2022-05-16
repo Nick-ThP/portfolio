@@ -595,6 +595,7 @@ article, .overlay {
     0.5px 0.5px    var(--interface-accent-color),
     0.25px 0.25px  var(--interface-accent-color);
     font-size: 1.2rem;
+    background-position: bottom;
 }
 
 .article3-column:active {
