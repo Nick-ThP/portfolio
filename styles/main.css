@@ -436,7 +436,7 @@ article, .overlay {
 
 .spin-class {
     animation-name: spin;
-    animation-duration: 800ms;
+    animation-duration: 900ms;
     animation-iteration-count: initial;
     animation-timing-function: linear;
 }
