@@ -728,7 +728,7 @@ article, .overlay {
 }
 
 .project-button:active {
-    color: #f5f5f5;
+    color: black;
     background-color: var(--interface-accent-color);
     border: 1px solid var(--interface-accent-color);
 }
@@ -796,6 +796,10 @@ textarea {
     resize: none;
 }
 
+input:focus, textarea:focus {
+    outline: 2.5px solid var(--interface-accent-color);
+}
+
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -836,7 +840,7 @@ textarea {
 }
 
 .form-button:active {
-    color: #f5f5f5;
+    color: black;
     background-color: var(--interface-accent-color);;
     border: 1px solid var(--interface-accent-color);
 }
