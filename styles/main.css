@@ -797,7 +797,7 @@ textarea {
 }
 
 input:focus, textarea:focus {
-    outline: 2.5px solid var(--interface-accent-color);
+    outline: 3px solid var(--interface-accent-color);
 }
 
 .form-group {
