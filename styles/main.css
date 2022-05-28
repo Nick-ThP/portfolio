@@ -889,7 +889,7 @@ input:focus, textarea:focus {
 footer {
     grid: 1fr / 1fr;
     display: grid;
-    grid-template: 1fr / 65% auto;
+    grid-template: 1fr / 60% auto;
     background-color: var(--interface-light-gray);
     color: #f5f5f5;
     font-size: 2rem;
@@ -897,7 +897,7 @@ footer {
     padding: 0px 30px;
 }
 
-footer i, .img-logo, #copyright {
+footer i, .img-logo, .svg-logo, #copyright {
     opacity: 0.7;
 }
 
@@ -919,8 +919,14 @@ footer i, .img-logo, #copyright {
 }
 
 .img-logo {
-    width: 1.78rem;
-    height: 1.78rem;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.svg-logo {
+    margin-top: 5px;
+    width: 1.95rem;
+    height: 1.95rem;
 }
 
 #copyright {
@@ -936,6 +942,7 @@ footer i, .img-logo, #copyright {
 
 .link {
     color: #f5f5f5;
+    fill: #f5f5f5;
     transition: 0.3s ease;
 }
 
@@ -943,6 +950,7 @@ footer i, .img-logo, #copyright {
     transform: scale(1.05);
     opacity: 1;
     color: var(--interface-accent-color);
+    fill: var(--interface-accent-color);
 }
 
 @media only screen and (max-width: 1200px) {
