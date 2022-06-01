@@ -1,6 +1,6 @@
 # General info
 
-Hello!
+Hello
 
 This project is my personal portfolio.
 
