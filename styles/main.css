@@ -417,7 +417,7 @@ article, .overlay {
 
 #intro-picture {
     grid: 1fr / 1fr;
-    width: 77%;
+    width: 85%;
     max-width: 400px;
     height: auto;
     border-radius: 50%;
@@ -425,9 +425,9 @@ article, .overlay {
     padding: 2px;
     background-color: var(--interface-accent-color);
     background-position: center;
-    margin-top: 50px;
+    margin-top: 35px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: box-shadow 0.3s, background-color 0s;
 }
 
 #intro-picture:hover {
@@ -436,7 +436,7 @@ article, .overlay {
 
 .spin-class {
     animation-name: spin;
-    animation-duration: 900ms;
+    animation-duration: 750ms;
     animation-iteration-count: initial;
     animation-timing-function: linear;
 }
