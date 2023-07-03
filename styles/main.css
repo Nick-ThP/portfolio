@@ -11,7 +11,7 @@
 :root {
     --interface-dark-gray: #161616;
     --interface-light-gray: #2a2a2a;
-    --interface-accent-color: #ff4000; 
+    --interface-accent-color: #ff4000;
 }
 
 /* Fonts */
@@ -53,13 +53,13 @@ body {
     background-attachment: fixed;
     background-size: auto;
 }
- 
+
 h1, h2, h3, h4, h5, h6, li {
-    font-family: 'Oswald'; 
+    font-family: 'Oswald';
 }
 
 p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .flex-center {
@@ -83,14 +83,14 @@ header {
     max-width: 60%;
     text-align: left;
     color: white;
-    text-shadow: 
-    6px 6px 10px   black, 
-    5.75px 5.75px  black, 
-    5.5px 5.5px    black, 
-    5.25px 5.25px  black, 
-    5px 5px        black, 
-    4.75px 4.75px  black, 
-    4.5px 4.5px    black, 
+    text-shadow:
+    6px 6px 10px   black,
+    5.75px 5.75px  black,
+    5.5px 5.5px    black,
+    5.25px 5.25px  black,
+    5px 5px        black,
+    4.75px 4.75px  black,
+    4.5px 4.5px    black,
     4.25px 4.25px  black,
     4px 4px        black,
     3.75px 3.75px  black,
@@ -125,7 +125,7 @@ header {
     font-weight: lighter;
     letter-spacing: 0.25rem;
     padding-left: 25px;
-}   
+}
 
 #nicklas {
     position: fixed;
@@ -152,12 +152,12 @@ header {
       transform: scale(0.90);
       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
     }
-    
+
     70% {
       transform: scale(1);
       box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
     }
-    
+
     100% {
       transform: scale(0.90);
       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
@@ -166,7 +166,7 @@ header {
 
 @media only screen and (max-width: 1200px) {
 
-    html { 
+    html {
         scroll-behavior: unset;
     }
 
@@ -194,13 +194,13 @@ header {
     height: 650px;
     background-color: var(--interface-dark-gray);
     box-shadow:
-    6px 6px 10px   black, 
-    5.75px 5.75px  black, 
-    5.5px 5.5px    black, 
-    5.25px 5.25px  black, 
-    5px 5px        black, 
-    4.75px 4.75px  black, 
-    4.5px 4.5px    black, 
+    6px 6px 10px   black,
+    5.75px 5.75px  black,
+    5.5px 5.5px    black,
+    5.25px 5.25px  black,
+    5px 5px        black,
+    4.75px 4.75px  black,
+    4.5px 4.5px    black,
     4.25px 4.25px  black,
     4px 4px        black,
     3.75px 3.75px  black,
@@ -217,8 +217,8 @@ header {
     1px 1px        black,
     0.75px 0.75px  black,
     0.5px 0.5px    black,
-    0.25px 0.25px  black;    
-} 
+    0.25px 0.25px  black;
+}
 
 @media only screen and (min-device-width : 1200px) {
 
@@ -309,15 +309,15 @@ nav .menu-button:hover {
 @media only screen and (max-width: 1200px) {
 
     nav {
-        display: none;   
-    } 
+        display: none;
+    }
 
     #burger-nav {
-        display: grid; 
+        display: grid;
         grid-template: repeat(5, auto) / 1fr;
         font-family: 'Oswald';
         position: fixed;
-        top: 0; 
+        top: 0;
         left: 0;
         z-index: 1;
         width: 100%;
@@ -379,7 +379,7 @@ nav .menu-button:hover {
 #section1, #section2, #section3, #section4 {
     grid: 1fr / 1fr;
     display: none;
-    color: #f5f5f5; 
+    color: #f5f5f5;
 }
 
 article, .overlay {
@@ -407,7 +407,7 @@ article, .overlay {
 
 /* Section 1 - Introduction */
 
-#article1 { 
+#article1 {
     grid-template: 1fr / repeat(3, 1fr);
 }
 
@@ -461,7 +461,7 @@ article, .overlay {
 
 @media only screen and (max-width: 1200px) {
 
-    #article1 { 
+    #article1 {
         grid-template: repeat(3, auto) / 1fr;
     }
 
@@ -473,7 +473,7 @@ article, .overlay {
 
 /* Section 2 - Background */
 
-#article2 { 
+#article2 {
     grid-template: 1fr / repeat(3, 1fr);
 }
 
@@ -505,7 +505,7 @@ article, .overlay {
 
 @media only screen and (max-width: 1200px) {
 
-    #article2 { 
+    #article2 {
         grid-template: repeat(3, auto) / 1fr;
         gap: 18px;
     }
@@ -526,8 +526,8 @@ article, .overlay {
 
 /* Section 3 - Projects */
 
-#article3 {   
-    grid-template: 1fr / repeat(4, 1fr);
+#article3 {
+    grid-template: 1fr / repeat(3, 1fr);
 }
 
 .article3-column {
@@ -542,13 +542,13 @@ article, .overlay {
     background-size: cover;
     background-position: center;
     box-shadow:
-    6px 6px 10px   black, 
-    5.75px 5.75px  black, 
-    5.5px 5.5px    black, 
-    5.25px 5.25px  black, 
-    5px 5px        black, 
-    4.75px 4.75px  black, 
-    4.5px 4.5px    black, 
+    6px 6px 10px   black,
+    5.75px 5.75px  black,
+    5.5px 5.5px    black,
+    5.25px 5.25px  black,
+    5px 5px        black,
+    4.75px 4.75px  black,
+    4.5px 4.5px    black,
     4.25px 4.25px  black,
     4px 4px        black,
     3.75px 3.75px  black,
@@ -570,13 +570,13 @@ article, .overlay {
 
 .article3-column:hover {
     box-shadow:
-    6px 6px 10px   var(--interface-accent-color), 
-    5.75px 5.75px  var(--interface-accent-color), 
-    5.5px 5.5px    var(--interface-accent-color), 
-    5.25px 5.25px  var(--interface-accent-color), 
-    5px 5px        var(--interface-accent-color), 
+    6px 6px 10px   var(--interface-accent-color),
+    5.75px 5.75px  var(--interface-accent-color),
+    5.5px 5.5px    var(--interface-accent-color),
+    5.25px 5.25px  var(--interface-accent-color),
+    5px 5px        var(--interface-accent-color),
     4.75px 4.75px  var(--interface-accent-color),
-    4.5px 4.5px    var(--interface-accent-color), 
+    4.5px 4.5px    var(--interface-accent-color),
     4.25px 4.25px  var(--interface-accent-color),
     4px 4px        var(--interface-accent-color),
     3.75px 3.75px  var(--interface-accent-color),
@@ -643,9 +643,9 @@ article, .overlay {
 }
 
 @media only screen and (max-width: 1200px) {
-    
+
     #article3 {
-        grid-template: repeat(4, auto) / 1fr;
+        grid-template: repeat(3, auto) / 1fr;
     }
 
     .article3-column {
@@ -720,7 +720,7 @@ article, .overlay {
     color: #f5f5f5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-    
+
 .project-button:hover {
     color: var(--interface-accent-color);
     background-color: transparent;
@@ -817,7 +817,7 @@ input:focus, textarea:focus {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--interface-dark-gray);
-    background-color: white;  
+    background-color: white;
     border: 1px solid white;
 }
 
@@ -832,7 +832,7 @@ input:focus, textarea:focus {
     transition: 0.3s ease;
     margin-top: 1rem;
 }
-    
+
 .form-button:hover {
     color: var(--interface-accent-color);
     background-color: transparent;
