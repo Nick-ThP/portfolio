@@ -1,6 +1,6 @@
 /* To top on refresh */
 
-window.scrollTo(0,0);
+window.scrollTo(0, 0);
 
 /* To top (mobile) */
 
@@ -41,7 +41,7 @@ const fadeOutOnScroll = element => {
 		element.style.visibility = 'hidden';
 	} else {
 		element.style.visibility = 'visible';
-	}	
+	}
 
 };
 
@@ -63,35 +63,35 @@ let visibleB = null;
 
 const show = (a, b) => {
 
-    if(visibleA !== a) {
-    	visibleA = a;
-    } 
-    hide();
-
-	if(visibleB !== b) {
-    	visibleB = b;
-    } 
+	if (visibleA !== a) {
+		visibleA = a;
+	}
 	hide();
-	
+
+	if (visibleB !== b) {
+		visibleB = b;
+	}
+	hide();
+
 	toTop();
 };
 
 const hide = () => {
-    for(let i = 0; i < sectionArray.length; i++) {
+	for (let i = 0; i < sectionArray.length; i++) {
 
-        let a = sectionArray[i];
+		let a = sectionArray[i];
 		let b = buttonArray[i];
-        let section = document.getElementById(a);
+		let section = document.getElementById(a);
 		let button = document.getElementById(b);
 
-        if (visibleA === a && visibleB === b) {
+		if (visibleA === a && visibleB === b) {
 			section.style.display = "block";
 			button.style.backgroundColor = "var(--interface-dark-gray";
-        } else {
-            section.style.display = "none";
+		} else {
+			section.style.display = "none";
 			button.style.backgroundColor = "var(--interface-light-gray";
-        }
-    }	
+		}
+	}
 
 	toTop();
 };
@@ -126,7 +126,7 @@ const allOff = () => {
 	document.getElementById('overlay3').style.display = "none";
 	document.getElementById('overlay4').style.display = "none";
 	document.getElementById('article3').style.display = "grid";
-	
+
 	toTop();
 };
 
@@ -137,9 +137,9 @@ document.getElementById('button3').addEventListener('click', allOff);
 const toggleBurger = () => {
 	let a = document.getElementById('hiddenLinks');
 	if (a.style.display === "block") {
-	  a.style.display = "none";
+		a.style.display = "none";
 	} else {
-	  a.style.display = "block";
+		a.style.display = "block";
 	}
 };
 
@@ -155,9 +155,9 @@ let initialSpin = false;
 window.onscroll = () => {
 	if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
 		document.getElementById('main-content').classList.add('fade-in');
-        if (!initialSpin && !/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		if (!initialSpin && !/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			introPic.classList.add("spin-class");
-            initialSpin = true;
+			initialSpin = true;
 		}
 	}
 };
@@ -175,20 +175,38 @@ const getRandomNumber = () => {
 
 document.getElementById('change-color').addEventListener('click', () => {
 	document.documentElement.style.setProperty
-	('--interface-accent-color', `hsl(${getRandomNumber()}, 100%, 50%)`)
+		('--interface-accent-color', `hsl(${getRandomNumber()}, 100%, 50%)`)
 });
 
 /* Spin */
 
 const introPic = document.getElementById('intro-picture')
 
-introPic.addEventListener("click", function(e) {
+introPic.addEventListener("click", function (e) {
 	e.preventDefault;
 	introPic.classList.remove("spin-class");
 	void introPic.offsetWidth;
 	introPic.classList.add("spin-class");
-  }, false);
+}, false);
 
 const forceToNotSpin = () => {
 	introPic.classList.remove("spin-class");
 };
+
+/* Project text fade on image hover */
+
+const opacityIn = (number) => {
+	if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		return
+	}
+
+	document.getElementsByClassName('overlay-text')[number].style.opacity = .2;
+}
+
+const opacityOut = (number) => {
+	if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		return
+	}
+
+	document.getElementsByClassName('overlay-text')[number].style.opacity = 1;
+}
