@@ -87,9 +87,11 @@ const hide = () => {
 		if (visibleA === a && visibleB === b) {
 			section.style.display = "block";
 			button.style.backgroundColor = "var(--interface-dark-gray";
+			button.style.pointerEvents = 'none';
 		} else {
 			section.style.display = "none";
 			button.style.backgroundColor = "var(--interface-light-gray";
+			button.style.pointerEvents = 'auto';
 		}
 	}
 
@@ -209,4 +211,14 @@ const opacityOut = (number) => {
 	}
 
 	document.getElementsByClassName('overlay-text')[number].style.opacity = 1;
+}
+
+/* Make interface disappear for a brief moment */
+
+const makeInterfaceDisappear = () => {
+	document.getElementById('wrapper').style.opacity = 0;
+
+	setTimeout(() => {
+		document.getElementById('wrapper').style.opacity = 1;
+	}, 300);
 }
