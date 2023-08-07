@@ -155,7 +155,7 @@ const closeAfter = () => {
 let initialSpin = false;
 
 window.onscroll = () => {
-	if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 200) {
+	if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 300) {
 		document.getElementById('main-content').classList.add('fade-in');
 		if (!initialSpin && !/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 			introPic.classList.add("spin-class");
