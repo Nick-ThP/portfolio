@@ -18,24 +18,21 @@
 
 @font-face {
 	font-family: 'Oswald';
-	src: url(../fonts/Oswald-Regular.ttf) format('truetype'),
-		url(../fonts/Oswald-Regular.woff) format('woff'),
+	src: url(../fonts/Oswald-Regular.ttf) format('truetype'), url(../fonts/Oswald-Regular.woff) format('woff'),
 		url(../fonts/Oswald-Regular.woff2) format('woff2');
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'Oswald';
-	src: url(../fonts/Oswald-Bold.ttf) format('truetype'),
-		url(../fonts/Oswald-Bold.woff) format('woff'),
+	src: url(../fonts/Oswald-Bold.ttf) format('truetype'), url(../fonts/Oswald-Bold.woff) format('woff'),
 		url(../fonts/Oswald-Bold.woff2) format('woff2');
 	font-weight: bold;
 }
 
 @font-face {
 	font-family: 'Oswald';
-	src: url(../fonts/Oswald-Light.ttf) format('truetype'),
-		url(../fonts/Oswald-Light.woff) format('woff'),
+	src: url(../fonts/Oswald-Light.ttf) format('truetype'), url(../fonts/Oswald-Light.woff) format('woff'),
 		url(../fonts/Oswald-Light.woff2) format('woff2');
 	font-weight: lighter;
 }
@@ -89,31 +86,10 @@ header {
 	max-width: 60%;
 	text-align: left;
 	color: white;
-	text-shadow:
-		6px 6px 10px black,
-		5.75px 5.75px black,
-		5.5px 5.5px black,
-		5.25px 5.25px black,
-		5px 5px black,
-		4.75px 4.75px black,
-		4.5px 4.5px black,
-		4.25px 4.25px black,
-		4px 4px black,
-		3.75px 3.75px black,
-		3.5px 3.5px black,
-		3.25px 3.25px black,
-		3px 3px black,
-		2.75px 2.75px black,
-		2.5px 2.5px black,
-		2.25px 2.25px black,
-		2px 2px black,
-		1.75px 1.75px black,
-		1.5px 1.5px black,
-		1.25px 1.25px black,
-		1px 1px black,
-		0.75px 0.75px black,
-		0.5px 0.5px black,
-		0.25px 0.25px black;
+	text-shadow: 6px 6px 10px black, 5.75px 5.75px black, 5.5px 5.5px black, 5.25px 5.25px black, 5px 5px black, 4.75px 4.75px black,
+		4.5px 4.5px black, 4.25px 4.25px black, 4px 4px black, 3.75px 3.75px black, 3.5px 3.5px black, 3.25px 3.25px black, 3px 3px black,
+		2.75px 2.75px black, 2.5px 2.5px black, 2.25px 2.25px black, 2px 2px black, 1.75px 1.75px black, 1.5px 1.5px black,
+		1.25px 1.25px black, 1px 1px black, 0.75px 0.75px black, 0.5px 0.5px black, 0.25px 0.25px black;
 }
 
 .heading h1 {
@@ -155,7 +131,7 @@ header {
 
 @keyframes pulse {
 	0% {
-		transform: scale(0.90);
+		transform: scale(0.9);
 		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
 	}
 
@@ -165,13 +141,12 @@ header {
 	}
 
 	100% {
-		transform: scale(0.90);
+		transform: scale(0.9);
 		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
 	}
 }
 
 @media only screen and (max-width: 1200px) {
-
 	html {
 		scroll-behavior: unset;
 	}
@@ -179,7 +154,6 @@ header {
 	header {
 		display: none;
 	}
-
 }
 
 /* Main content */
@@ -188,7 +162,7 @@ header {
 	width: 100%;
 	height: 100vh;
 	display: flex;
-	transition: .75s ease;
+	transition: 0.75s ease;
 }
 
 #main-content {
@@ -200,35 +174,13 @@ header {
 	width: 1400px;
 	height: 650px;
 	background-color: var(--interface-dark-gray);
-	box-shadow:
-		6px 6px 10px black,
-		5.75px 5.75px black,
-		5.5px 5.5px black,
-		5.25px 5.25px black,
-		5px 5px black,
-		4.75px 4.75px black,
-		4.5px 4.5px black,
-		4.25px 4.25px black,
-		4px 4px black,
-		3.75px 3.75px black,
-		3.5px 3.5px black,
-		3.25px 3.25px black,
-		3px 3px black,
-		2.75px 2.75px black,
-		2.5px 2.5px black,
-		2.25px 2.25px black,
-		2px 2px black,
-		1.75px 1.75px black,
-		1.5px 1.5px black,
-		1.25px 1.25px black,
-		1px 1px black,
-		0.75px 0.75px black,
-		0.5px 0.5px black,
-		0.25px 0.25px black;
+	box-shadow: 6px 6px 10px black, 5.75px 5.75px black, 5.5px 5.5px black, 5.25px 5.25px black, 5px 5px black, 4.75px 4.75px black,
+		4.5px 4.5px black, 4.25px 4.25px black, 4px 4px black, 3.75px 3.75px black, 3.5px 3.5px black, 3.25px 3.25px black, 3px 3px black,
+		2.75px 2.75px black, 2.5px 2.5px black, 2.25px 2.25px black, 2px 2px black, 1.75px 1.75px black, 1.5px 1.5px black,
+		1.25px 1.25px black, 1px 1px black, 0.75px 0.75px black, 0.5px 0.5px black, 0.25px 0.25px black;
 }
 
-@media only screen and (min-device-width : 1200px) {
-
+@media only screen and (min-device-width: 1200px) {
 	.fade-in {
 		opacity: 1;
 		animation-name: fadeInOpacity;
@@ -250,7 +202,6 @@ header {
 }
 
 @media only screen and (max-width: 1200px) {
-
 	#wrapper {
 		height: auto;
 	}
@@ -262,23 +213,18 @@ header {
 		width: auto;
 		height: auto;
 	}
-
 }
 
 @media only screen and (max-width: 1200px) and (orientation: landscape) {
-
 	#main-content {
 		padding-top: 7vw;
 	}
-
 }
 
 @media only screen and (min-width: 768px) and (orientation: portrait) {
-
 	#main-content {
 		padding-top: 12.5vw;
 	}
-
 }
 
 /* Navigation */
@@ -317,7 +263,6 @@ nav .menu-button:hover {
 }
 
 @media only screen and (max-width: 1200px) {
-
 	nav {
 		display: none;
 	}
@@ -373,17 +318,14 @@ nav .menu-button:hover {
 		border-right: none;
 		border-bottom: 2px solid var(--interface-dark-gray);
 	}
-
 }
 
 @media only screen and (max-width: 1200px) and (orientation: landscape) {
-
 	#top-bar h1,
 	#top-bar a,
 	#hiddenLinks .menu-button {
 		font-size: 3vw;
 	}
-
 }
 
 /* Sections - General */
@@ -406,7 +348,6 @@ article,
 }
 
 @media only screen and (max-width: 1200px) {
-
 	article {
 		padding: 40px 20px 40px 20px;
 	}
@@ -419,7 +360,6 @@ article,
 	.overlay {
 		gap: 30px;
 	}
-
 }
 
 /* Section 1 - Introduction */
@@ -445,7 +385,7 @@ article,
 	margin-top: 35px;
 	cursor: pointer;
 	transition: box-shadow 0.3s, background-color 0s, opacity 1s;
-	opacity: .9;
+	opacity: 0.9;
 }
 
 #intro-picture:hover {
@@ -481,7 +421,6 @@ article,
 }
 
 @media only screen and (max-width: 1200px) {
-
 	#article1 {
 		grid-template: repeat(3, auto) / 1fr;
 	}
@@ -489,7 +428,6 @@ article,
 	#intro-picture {
 		margin-top: 10px;
 	}
-
 }
 
 /* Section 2 - Background */
@@ -526,7 +464,6 @@ article,
 }
 
 @media only screen and (max-width: 1200px) {
-
 	#article2 {
 		grid-template: repeat(3, auto) / 1fr;
 		gap: 18px;
@@ -543,7 +480,6 @@ article,
 	#education {
 		margin-top: 13px;
 	}
-
 }
 
 /* Section 3 - Projects */
@@ -558,64 +494,27 @@ article,
 	justify-content: flex-end;
 	flex-direction: column;
 	height: 390px;
-	transition: .5s ease;
+	transition: 0.5s ease;
 	cursor: pointer;
-	opacity: .9;
+	opacity: 0.9;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	box-shadow:
-		6px 6px 10px black,
-		5.75px 5.75px black,
-		5.5px 5.5px black,
-		5.25px 5.25px black,
-		5px 5px black,
-		4.75px 4.75px black,
-		4.5px 4.5px black,
-		4.25px 4.25px black,
-		4px 4px black,
-		3.75px 3.75px black,
-		3.5px 3.5px black,
-		3.25px 3.25px black,
-		3px 3px black,
-		2.75px 2.75px black,
-		2.5px 2.5px black,
-		2.25px 2.25px black,
-		2px 2px black,
-		1.75px 1.75px black,
-		1.5px 1.5px black,
-		1.25px 1.25px black,
-		1px 1px black,
-		0.75px 0.75px black,
-		0.5px 0.5px black,
-		0.25px 0.25px black;
+	box-shadow: 6px 6px 3px black, 5.75px 5.75px black, 5.5px 5.5px black, 5.25px 5.25px black, 5px 5px black, 4.75px 4.75px black,
+		4.5px 4.5px black, 4.25px 4.25px black, 4px 4px black, 3.75px 3.75px black, 3.5px 3.5px black, 3.25px 3.25px black, 3px 3px black,
+		2.75px 2.75px black, 2.5px 2.5px black, 2.25px 2.25px black, 2px 2px black, 1.75px 1.75px black, 1.5px 1.5px black,
+		1.25px 1.25px black, 1px 1px black, 0.75px 0.75px black, 0.5px 0.5px black, 0.25px 0.25px black;
 }
 
 .article3-column:hover {
-	box-shadow:
-		6px 6px 10px var(--interface-accent-color),
-		5.75px 5.75px var(--interface-accent-color),
-		5.5px 5.5px var(--interface-accent-color),
-		5.25px 5.25px var(--interface-accent-color),
-		5px 5px var(--interface-accent-color),
-		4.75px 4.75px var(--interface-accent-color),
-		4.5px 4.5px var(--interface-accent-color),
-		4.25px 4.25px var(--interface-accent-color),
-		4px 4px var(--interface-accent-color),
-		3.75px 3.75px var(--interface-accent-color),
-		3.5px 3.5px var(--interface-accent-color),
-		3.25px 3.25px var(--interface-accent-color),
-		3px 3px var(--interface-accent-color),
-		2.75px 2.75px var(--interface-accent-color),
-		2.5px 2.5px var(--interface-accent-color),
-		2.25px 2.25px var(--interface-accent-color),
-		2px 2px var(--interface-accent-color),
-		1.75px 1.75px var(--interface-accent-color),
-		1.5px 1.5px var(--interface-accent-color),
-		1.25px 1.25px var(--interface-accent-color),
-		1px 1px var(--interface-accent-color),
-		0.75px 0.75px var(--interface-accent-color),
-		0.5px 0.5px var(--interface-accent-color),
+	box-shadow: 6px 6px 3px var(--interface-accent-color), 5.75px 5.75px var(--interface-accent-color),
+		5.5px 5.5px var(--interface-accent-color), 5.25px 5.25px var(--interface-accent-color), 5px 5px var(--interface-accent-color),
+		4.75px 4.75px var(--interface-accent-color), 4.5px 4.5px var(--interface-accent-color), 4.25px 4.25px var(--interface-accent-color),
+		4px 4px var(--interface-accent-color), 3.75px 3.75px var(--interface-accent-color), 3.5px 3.5px var(--interface-accent-color),
+		3.25px 3.25px var(--interface-accent-color), 3px 3px var(--interface-accent-color), 2.75px 2.75px var(--interface-accent-color),
+		2.5px 2.5px var(--interface-accent-color), 2.25px 2.25px var(--interface-accent-color), 2px 2px var(--interface-accent-color),
+		1.75px 1.75px var(--interface-accent-color), 1.5px 1.5px var(--interface-accent-color), 1.25px 1.25px var(--interface-accent-color),
+		1px 1px var(--interface-accent-color), 0.75px 0.75px var(--interface-accent-color), 0.5px 0.5px var(--interface-accent-color),
 		0.25px 0.25px var(--interface-accent-color);
 	font-size: 1.2rem;
 	transform: scale(1.05);
@@ -667,7 +566,6 @@ article,
 }
 
 @media only screen and (max-width: 1200px) {
-
 	#article3 {
 		grid-template: repeat(4, auto) / 1fr;
 	}
@@ -681,7 +579,6 @@ article,
 		display: block;
 		grid: 1fr / 1fr;
 	}
-
 }
 
 /* Section 3 - Overlays */
@@ -695,7 +592,7 @@ article,
 	position: relative;
 	margin-top: -10px;
 	margin-left: 70px;
-	transition: .5s;
+	transition: 0.5s;
 	grid: 1fr / 1fr;
 	text-align: justify;
 }
@@ -712,70 +609,31 @@ article,
 }
 
 .overlay-picture {
-	transition: .5s;
+	transition: 0.5s;
 	position: relative;
 	width: 682px;
 	height: auto;
 	margin-left: -230px;
-	opacity: .2;
-	box-shadow:
-		6px 6px 10px black,
-		5.75px 5.75px black,
-		5.5px 5.5px black,
-		5.25px 5.25px black,
-		5px 5px black,
-		4.75px 4.75px black,
-		4.5px 4.5px black,
-		4.25px 4.25px black,
-		4px 4px black,
-		3.75px 3.75px black,
-		3.5px 3.5px black,
-		3.25px 3.25px black,
-		3px 3px black,
-		2.75px 2.75px black,
-		2.5px 2.5px black,
-		2.25px 2.25px black,
-		2px 2px black,
-		1.75px 1.75px black,
-		1.5px 1.5px black,
-		1.25px 1.25px black,
-		1px 1px black,
-		0.75px 0.75px black,
-		0.5px 0.5px black,
-		0.25px 0.25px black;
+	opacity: 0.2;
+	box-shadow: 6px 6px 3px black, 5.75px 5.75px black, 5.5px 5.5px black, 5.25px 5.25px black, 5px 5px black, 4.75px 4.75px black,
+		4.5px 4.5px black, 4.25px 4.25px black, 4px 4px black, 3.75px 3.75px black, 3.5px 3.5px black, 3.25px 3.25px black, 3px 3px black,
+		2.75px 2.75px black, 2.5px 2.5px black, 2.25px 2.25px black, 2px 2px black, 1.75px 1.75px black, 1.5px 1.5px black,
+		1.25px 1.25px black, 1px 1px black, 0.75px 0.75px black, 0.5px 0.5px black, 0.25px 0.25px black;
 }
 
 .overlay-picture:hover {
 	opacity: 1;
 	z-index: 2;
 	transform: scale(1.01);
-	box-shadow:
-		6px 6px 10px var(--interface-accent-color),
-		5.75px 5.75px var(--interface-accent-color),
-		5.5px 5.5px var(--interface-accent-color),
-		5.25px 5.25px var(--interface-accent-color),
-		5px 5px var(--interface-accent-color),
-		4.75px 4.75px var(--interface-accent-color),
-		4.5px 4.5px var(--interface-accent-color),
-		4.25px 4.25px var(--interface-accent-color),
-		4px 4px var(--interface-accent-color),
-		3.75px 3.75px var(--interface-accent-color),
-		3.5px 3.5px var(--interface-accent-color),
-		3.25px 3.25px var(--interface-accent-color),
-		3px 3px var(--interface-accent-color),
-		2.75px 2.75px var(--interface-accent-color),
-		2.5px 2.5px var(--interface-accent-color),
-		2.25px 2.25px var(--interface-accent-color),
-		2px 2px var(--interface-accent-color),
-		1.75px 1.75px var(--interface-accent-color),
-		1.5px 1.5px var(--interface-accent-color),
-		1.25px 1.25px var(--interface-accent-color),
-		1px 1px var(--interface-accent-color),
-		0.75px 0.75px var(--interface-accent-color),
-		0.5px 0.5px var(--interface-accent-color),
+	box-shadow: 6px 6px 3px var(--interface-accent-color), 5.75px 5.75px var(--interface-accent-color),
+		5.5px 5.5px var(--interface-accent-color), 5.25px 5.25px var(--interface-accent-color), 5px 5px var(--interface-accent-color),
+		4.75px 4.75px var(--interface-accent-color), 4.5px 4.5px var(--interface-accent-color), 4.25px 4.25px var(--interface-accent-color),
+		4px 4px var(--interface-accent-color), 3.75px 3.75px var(--interface-accent-color), 3.5px 3.5px var(--interface-accent-color),
+		3.25px 3.25px var(--interface-accent-color), 3px 3px var(--interface-accent-color), 2.75px 2.75px var(--interface-accent-color),
+		2.5px 2.5px var(--interface-accent-color), 2.25px 2.25px var(--interface-accent-color), 2px 2px var(--interface-accent-color),
+		1.75px 1.75px var(--interface-accent-color), 1.5px 1.5px var(--interface-accent-color), 1.25px 1.25px var(--interface-accent-color),
+		1px 1px var(--interface-accent-color), 0.75px 0.75px var(--interface-accent-color), 0.5px 0.5px var(--interface-accent-color),
 		0.25px 0.25px var(--interface-accent-color);
-
-
 }
 
 .overlay i {
@@ -825,7 +683,6 @@ article,
 }
 
 @media only screen and (max-width: 1200px) {
-
 	.overlay {
 		grid-template: auto auto / 1fr;
 	}
@@ -852,7 +709,6 @@ article,
 	.project-button {
 		width: 100%;
 	}
-
 }
 
 /* Section 4 - Contact */
@@ -878,7 +734,6 @@ article,
 }
 
 @media only screen and (max-width: 1200px) {
-
 	#article4 {
 		grid-template: auto auto / 1fr;
 	}
@@ -886,7 +741,6 @@ article,
 	.display-only-mobile {
 		display: block;
 	}
-
 }
 
 /* Section 4 - Contact form */
@@ -964,15 +818,12 @@ label {
 }
 
 @-moz-document url-prefix() {
-
 	.form-button {
 		margin-top: 0px;
 	}
-
 }
 
 @media only screen and (max-width: 1200px) {
-
 	form {
 		padding-left: 0;
 		margin-left: 0;
@@ -989,7 +840,6 @@ label {
 		width: 100%;
 		margin-top: 0;
 	}
-
 }
 
 /* Footer */
@@ -1065,7 +915,6 @@ footer i,
 }
 
 @media only screen and (max-width: 1200px) {
-
 	footer {
 		grid-template: auto auto / 1fr;
 		padding: 20px;
@@ -1090,5 +939,4 @@ footer i,
 	#change-color-a {
 		display: none;
 	}
-
 }
