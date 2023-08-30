@@ -516,7 +516,7 @@ article,
 		1.75px 1.75px var(--interface-accent-color), 1.5px 1.5px var(--interface-accent-color), 1.25px 1.25px var(--interface-accent-color),
 		1px 1px var(--interface-accent-color), 0.75px 0.75px var(--interface-accent-color), 0.5px 0.5px var(--interface-accent-color),
 		0.25px 0.25px var(--interface-accent-color);
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	transform: scale(1.01);
 	opacity: 1;
 }
